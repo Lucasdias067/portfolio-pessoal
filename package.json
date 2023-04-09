@@ -26,5 +26,6 @@
   "devDependencies": {
     "@rocketseat/eslint-config": "^1.2.0",
     "file-loader": "^6.2.0"
-  }
+  },
+  "lint-fix": "eslint --fix 'src/**/*.{js,jsx,ts,tsx,json,css,scss,md}'"
 }
