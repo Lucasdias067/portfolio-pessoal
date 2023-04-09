@@ -1,8 +1,8 @@
-import './style.css';
-import Link from 'next/link';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faDownload } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import "./style.css";
+import Link from "next/link";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Section() {
 
@@ -15,16 +15,16 @@ export default function Section() {
         <div className="btn-container">
           <div className="btn-links">
             <Link href="https://github.com/Lucasdias067/" target="_blank" title="GitHub">
-              <FontAwesomeIcon icon={faGithub} size='4x' />
+              <FontAwesomeIcon icon={faGithub} size="4x" />
             </Link>
             <Link href="https://www.linkedin.com/in/lucasdias067/" target="_blank" title="LinkedIn">
-              <FontAwesomeIcon icon={faLinkedin} size='4x' />
+              <FontAwesomeIcon icon={faLinkedin} size="4x" />
             </Link>
           </div>
-          <Link href='/files/CURRICULO.pdf' target="_blank" download rel="noopener noreferrer" title="Download">
+          <Link href="/files/CURRICULO.pdf" target="_blank" download rel="noopener noreferrer" title="Download">
             <button>
               Baixar CV
-              <FontAwesomeIcon icon={faDownload} size='1x' beatFade />
+              <FontAwesomeIcon icon={faDownload} size="1x" beatFade />
             </button>
           </Link>
         </div>

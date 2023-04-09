@@ -6,6 +6,7 @@ import React from '../../assets/icons/brand-react.svg'
 import ReactNative from '../../assets/icons/brand-react-native.svg'
 import NextJs from '../../assets/icons/brand-nextjs.svg'
 import Sql from '../../assets/icons/sql.svg'
+import Image from 'next/image';
 
 interface skillsProps {
   icon: HTMLImageElement;
@@ -60,7 +61,7 @@ export default function MySkills() {
             <div className="card__giratorio">
               <div className="card__giratorio-conteudo">
                 <div className="card__giratorio-conteudo--frente">
-                  <img src={icon.src} alt="" width={icon.width = 64} height={icon.height = 64} />
+                  <Image src={icon.src} alt="" width={icon.width = 64} height={icon.height = 64} />
                 </div>
                 <div className="card__giratorio-conteudo--traseira">
                   <div>
