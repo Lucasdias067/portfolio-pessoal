@@ -1,8 +1,8 @@
 "use client"
-import Link from "next/link";
+import Link from "next/link"
 import projectsLists from "../../assets/projetos.json"
-import { useState } from 'react'
-import './style.css';
+import { useState } from "react"
+import "./style.css"
 
 export default function ProjectsList() {
 

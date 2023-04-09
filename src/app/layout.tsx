@@ -1,8 +1,8 @@
-import Header from "./header/page";
-import Footer from "./footer/page";
-import { config } from '@fortawesome/fontawesome-svg-core'
-import '@fortawesome/fontawesome-svg-core/styles.css'
-import './global.css'
+import Header from "./header/page"
+import Footer from "./footer/page"
+import { config } from "@fortawesome/fontawesome-svg-core"
+import "@fortawesome/fontawesome-svg-core/styles.css"
+import "./global.css"
 
 config.autoAddCss = false
 

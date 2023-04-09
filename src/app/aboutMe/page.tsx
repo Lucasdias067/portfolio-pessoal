@@ -1,6 +1,6 @@
-import './style.css';
-import notebook from '../../assets/img-notebook.png';
-import Image from 'next/image';
+import "./style.css"
+import notebook from "../../assets/img-notebook.png"
+import Image from "next/image"
 
 export default function AboutMe() {
 
@@ -11,7 +11,7 @@ export default function AboutMe() {
           <Image src={notebook} alt="Notebook" className="img-sobre-mim" />
         </div>
         <div className="sobre-mim-container">
-          <div className="centralizar" id='sobre-mim-titulo'>
+          <div className="centralizar" id="sobre-mim-titulo">
             <h1 className="titulos">
               Sobre mim
               <div className="effect"> </div>

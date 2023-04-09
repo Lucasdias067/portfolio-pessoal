@@ -1,8 +1,8 @@
-import "./style.css";
-import Link from "next/link";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faDownload } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./style.css"
+import Link from "next/link"
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+import { faDownload } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export default function Section() {
 

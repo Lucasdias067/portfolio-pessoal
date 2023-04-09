@@ -1,14 +1,14 @@
 "use client"
-import Link from "next/link";
-import { useState } from "react";
-import './style.css';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faCopy, faLinkSlash } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link"
+import { useState } from "react"
+import "./style.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+import { faCopy, faLinkSlash } from "@fortawesome/free-solid-svg-icons"
 
 export default function Contact() {
 
-  const copy = 'lucasdias067@gmail.com';
+  const copy = "lucasdias067@gmail.com";
 
   function clipboard() {
     navigator.clipboard.writeText(copy)

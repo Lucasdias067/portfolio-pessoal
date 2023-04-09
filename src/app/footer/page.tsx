@@ -1,7 +1,4 @@
-import Link from "next/link";
-import './style.css';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import "./style.css";
 
 export default function Footer() {
 
