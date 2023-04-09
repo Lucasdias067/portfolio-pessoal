@@ -1,0 +1,66 @@
+[
+  {
+    "title": "Aluroni",
+    "linkPage": "https://restaurant-aluroni.vercel.app/",
+    "description": "Projeto que replica um restaurante. As tecnologias utilizadas foram: React",
+    "linkGithub": "https://github.com/Lucasdias067/restauranteAluroni-React",
+    "id": 1,
+    "category": "React"
+  },
+  {
+    "title": "Alura Shop",
+    "linkPage": "https://alura-shop.netlify.app/",
+    "description": "Projeto de compras, podendo adicionar ao carrinho. As tecnologias utilizadas foram: React",
+    "linkGithub": "https://github.com/Lucasdias067/AluraShop-React",
+    "id": 2,
+    "category": "React"
+  },
+  {
+    "title": "Alura Tube",
+    "linkPage": "https://alura--tube.vercel.app/",
+    "description": "Projeto que replica um youtube. As tecnologias utilizadas foram: Next",
+    "linkGithub": "https://github.com/Lucasdias067/aluraTube-Next",
+    "id": 3,
+    "category": "Next"
+  },
+  {
+    "title": "To-do list",
+    "linkPage": "https://alura-studiess.vercel.app/",
+    "description": "Projeto TODO LIST com cronomêtro. As tecnologias utilizadas foram: React",
+    "linkGithub": "https://github.com/Lucasdias067/todoList-React",
+    "id": 4,
+    "category": "React"
+  },
+  {
+    "title": "Organo",
+    "linkPage": "https://organo-web.vercel.app/",
+    "description": "Projeto da Alura bastante interativo. As tecnologias utilizadas foram: React",
+    "linkGithub": "https://github.com/Lucasdias067/organo-React",
+    "id": 5,
+    "category": "React"
+  },
+  {
+    "title": "Credit Card",
+    "linkPage": "https://credit-cards-js.vercel.app/",
+    "description": "Projeto de um cartão de crédito editável. As tecnologias utilizadas foram: JavaScript e TypeScript",
+    "linkGithub": "https://github.com/Lucasdias067/creditCard-TS",
+    "id": 6,
+    "category": "JavaScript"
+  },
+  {
+    "title": "Formulario",
+    "linkPage": "",
+    "description": "Um projeto de formulario com validação. As tecnologias utilizadas foram: React Native",
+    "linkGithub": "https://github.com/Lucasdias067/formValidation-reactNative",
+    "id": 7,
+    "category": "React Native"
+  },
+  {
+    "title": "OrgsCesta",
+    "linkPage": "",
+    "description": "Projeto que simula uma cesta. As tecnologias utilizadas foram: React Native",
+    "linkGithub": "https://github.com/Lucasdias067/orgsCesta-reactNative",
+    "id": 8,
+    "category": "React Native"
+  }
+]

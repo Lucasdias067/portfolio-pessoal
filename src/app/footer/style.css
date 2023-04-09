@@ -1,0 +1,49 @@
+footer {
+  border-top: 1px solid rgba(105, 104, 104, 0.425);
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  opacity: 90%;
+}
+
+.link-rodape,
+#link-name2 {
+  color: white;
+  transition: all 0.6s;
+}
+
+.link-rodape:hover,
+#link-name2:hover,
+.sociais-rodape:hover {
+  color: #ccc;
+  transform: scale(1.1);
+}
+
+.rodape,
+.contato-rodape {
+  display: flex;
+}
+
+.rodape a {
+  padding: 15px;
+  font-size: 0.9rem;
+}
+
+.sociais-rodape {
+  color: #ffffff;
+  margin: 10px;
+  transition: 0.4s;
+}
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 528px) {
+  .rodape {
+    flex-direction: column;
+  }
+}

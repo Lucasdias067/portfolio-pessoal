@@ -1,0 +1,103 @@
+.sessao-inicial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  padding: 5rem 0 5rem 0;
+}
+
+.ola {
+  font-size: 1.2rem;
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  color: #000;
+}
+
+.nome-text {
+  font-size: 2.8rem;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  margin: 0;
+  color: #000;
+}
+
+.desenvolvedor {
+  font-size: 1.2rem;
+  opacity: 80%;
+  font-family: 'Montserrat';
+  margin: -5px 0 20px 0;
+  color: #000;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 15%;
+}
+
+.btn-container button {
+  display: flex;
+  height: 60px;
+  font-weight: bold;
+  width: 180px;
+  border-radius: 35px;
+  transition: 1s all;
+  border: none;
+  color: #fff;
+  font-family: 'Montserrat';
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, .4);
+  background: #262626;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.iconDownload {
+  margin-right: 0.5rem;
+}
+
+button:hover {
+  transform: scale(1.08);
+}
+
+.btn-links {
+  display: flex;
+  justify-content: space-between;
+  width: 140px;
+}
+
+.btn-links a {
+  color: #262626;
+  transition: 0.7s all;
+}
+
+
+.btn-links a:hover {
+  opacity: 0.55;
+}
+
+.tamanho-textos {
+  padding: 10%;
+  width: 75%;
+  background-color: #E0E0E0;
+  border-radius: 20px;
+}
+
+@media (max-width: 700px) {
+  .btn-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .tamanho-textos {
+    padding: 8%;
+    width: 80%;
+  }
+
+  .desenvolvedor {
+    width: 60%;
+  }
+}

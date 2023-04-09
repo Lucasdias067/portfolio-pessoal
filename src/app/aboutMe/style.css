@@ -1,0 +1,34 @@
+.sobre-mim {
+  display: flex;
+  align-items: center;
+  margin: 10%;
+}
+
+#sobre-mim-titulo {
+  align-items: flex-start
+}
+
+.img-sobre-mim {
+  width: 340px;
+  padding: 25px 20px;
+  transition: all 0.7s;
+}
+
+.img-sobre-mim:hover {
+  transform: scale(1.02);
+}
+
+.inf-sobre-mim {
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .sobre-mim {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .img-sobre-mim {
+    width: 240px;
+  }
+}
