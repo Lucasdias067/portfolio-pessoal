@@ -12,6 +12,7 @@
   width: 340px;
   padding: 25px 20px;
   transition: all 0.7s;
+  height: 100%;
 }
 
 .img-sobre-mim:hover {
