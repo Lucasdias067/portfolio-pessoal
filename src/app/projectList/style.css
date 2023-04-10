@@ -20,13 +20,17 @@
   color: #fff;
   font-family: 'Montserrat';
   box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, .4);
-  transition: all .7s ease-out;
+  transition: .5s;
   background: #303030;
-  border: none;
+  border: #303030;
   border-radius: 10px;
   font-weight: bold;
   height: 45px;
   width: 100%;
+}
+
+#active {
+  border: 2px solid white;
 }
 
 .container {

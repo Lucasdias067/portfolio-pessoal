@@ -4,20 +4,45 @@ import projectsLists from "../../assets/projetos.json"
 import { useState } from "react"
 import "./style.css"
 
+type Projects = typeof projectsLists
+
 export default function ProjectsList() {
 
   const [projects, setProjects] = useState(projectsLists);
-  const [projectsBool, setProjectsBool] = useState(false);
+  const [activeButton, setActiveButton] = useState("");
+  const [activeBool, setactiveBool] = useState(false);
 
-  function filterIsTrue(name: string, projectsBool: boolean) {
-    const filtered = projectsLists.filter(({ category }) => category === name);
-    setProjects(projectsBool ? filtered : projectsLists);
+  function filterProjects(e: React.MouseEvent<HTMLButtonElement>) {
+    const { name } = e.target as HTMLButtonElement
+    const filteredProjects = projectsLists.filter(({ category }) => category === name);
+    const isProjectFiltered = projects.length === filteredProjects.length
+
+    const hasSameCategory = projects.some(({ category }) => {
+      const sameCategory = category === name
+      return sameCategory
+    })
+    filteringProjects(name, isProjectFiltered, hasSameCategory, filteredProjects)
   }
 
-  function filterFunction(e?: React.MouseEvent<HTMLButtonElement>) {
-    const name = (e?.target as HTMLButtonElement)?.name
-    setProjectsBool(prevProjectsBool => !prevProjectsBool)
-    filterIsTrue(name, !projectsBool)
+  function filteringProjects(name: string, isProjectFiltered: boolean, hasSameCategory: boolean, filteredProjects: Projects) {
+    if (isProjectFiltered === false) {
+      hasProjectsFiltered(name)
+      return setProjects(filteredProjects)
+    }
+
+    if (!hasSameCategory) {
+      hasProjectsFiltered(name)
+      setProjects(filteredProjects)
+
+    } else {
+      setactiveBool(false)
+      setProjects(projectsLists)
+    }
+  }
+
+  function hasProjectsFiltered(name: string) {
+    setActiveButton(name)
+    setactiveBool(true)
   }
 
   return (
@@ -28,10 +53,10 @@ export default function ProjectsList() {
           <div className="effect"></div>
         </h1>
         <div className="container-filter">
-          <button name="JavaScript" onClick={filterFunction}>JavaScript</button>
-          <button name="React" onClick={filterFunction}>React</button>
-          <button name="Next" onClick={filterFunction}>Next</button>
-          <button name="React Native" onClick={filterFunction}>React Native</button>
+          <button name="JavaScript" onClick={filterProjects} id={activeButton === "JavaScript" && activeBool ? "active" : ""}>JavaScript</button>
+          <button name="React" onClick={filterProjects} id={activeButton === "React" && activeBool ? "active" : ""}>React</button>
+          <button name="Next" onClick={filterProjects} id={activeButton === "Next" && activeBool ? "active" : ""}>Next</button>
+          <button name="React Native" onClick={filterProjects} id={activeButton === "React Native" && activeBool ? "active" : ""}>React Native</button>
         </div>
       </div>
       <div className="divisao-sessao">
