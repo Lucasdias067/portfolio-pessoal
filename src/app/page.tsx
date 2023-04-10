@@ -1,4 +1,3 @@
-import Link from "next/link"
 import Section from "./section/page"
 import AboutMe from "./aboutMe/page"
 import ProjectsList from "./projectList/page"

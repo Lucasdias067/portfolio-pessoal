@@ -18,7 +18,7 @@ export default function Contact() {
 
     setTimeout(() => {
       setShowModal(false)
-    }, 5000)
+    }, 3500)
   }
 
   return (

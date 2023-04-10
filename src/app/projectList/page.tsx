@@ -9,15 +9,15 @@ export default function ProjectsList() {
   const [projects, setProjects] = useState(projectsLists);
   const [projectsBool, setProjectsBool] = useState(false);
 
-  function filterIsTrue(name: string) {
-    setProjectsBool(!projectsBool)
+  function filterIsTrue(name: string, projectsBool: boolean) {
     const filtered = projectsLists.filter(({ category }) => category === name);
-    projectsBool ? setProjects(filtered) : setProjects(projectsLists)
+    setProjects(projectsBool ? filtered : projectsLists);
   }
 
   function filterFunction(e?: React.MouseEvent<HTMLButtonElement>) {
     const name = (e?.target as HTMLButtonElement)?.name
-    filterIsTrue(name)
+    setProjectsBool(prevProjectsBool => !prevProjectsBool)
+    filterIsTrue(name, !projectsBool)
   }
 
   return (
