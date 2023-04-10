@@ -42,8 +42,12 @@ footer {
   }
 }
 
-@media (max-width: 528px) {
+@media (max-width: 498px) {
   .rodape {
     flex-direction: column;
+  }
+
+  #link-name2 {
+    display: none;
   }
 }

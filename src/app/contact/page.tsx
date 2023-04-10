@@ -4,14 +4,21 @@ import { useState } from "react"
 import "./style.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
-import { faCopy, faLinkSlash } from "@fortawesome/free-solid-svg-icons"
+import { faCopy, faLinkSlash, faCheckCircle } from "@fortawesome/free-solid-svg-icons"
 
 export default function Contact() {
+
+  const [showModal, setShowModal] = useState(false);
 
   const copy = "lucasdias067@gmail.com";
 
   function clipboard() {
     navigator.clipboard.writeText(copy)
+    setShowModal(true);
+
+    setTimeout(() => {
+      setShowModal(false)
+    }, 5000)
   }
 
   return (
@@ -29,6 +36,12 @@ export default function Contact() {
             <FontAwesomeIcon icon={faCopy} size="xl" />
           </span>
         </h2>
+        {showModal && (
+        <div className="modal">
+          <FontAwesomeIcon icon={faCheckCircle} size="1x" />
+          <p>Copiado para a área de transferência</p>
+        </div>
+      )}
         <div>
           <Link href="https://github.com/Lucasdias067/" target="_blank" className="link-contato" title="GitHub">
             <FontAwesomeIcon icon={faGithub} size="3x" beatFade />

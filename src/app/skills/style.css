@@ -61,6 +61,12 @@
   gap: 10px;
 }
 
+@media (max-width: 768px) {
+  .card__giratorio-conteudo--traseira div {
+    height: 90%;
+}
+}
+
 @media (max-width: 424px) {
   .card__giratorio {
     width: 250px;

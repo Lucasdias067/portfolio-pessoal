@@ -47,6 +47,7 @@
   width: 300px;
   height: 200px;
   transition: 0.5s;
+  border-radius: 7px;
 }
 
 .face1 {
@@ -102,13 +103,14 @@
   color: #333;
   padding: 5px;
   border: 1px solid #333;
+  border-radius: 5px;
 }
 
 .face2 a:hover {
-  background: #5ae974;
-  color: rgb(0, 0, 0);
-  transition: 0.4s;
-  border: 1px solid #5ae974;
+  background: #333;
+  color: #fff;
+  transition: 0.6s;
+  border: none;
 }
 
 @media (max-width: 768px) {

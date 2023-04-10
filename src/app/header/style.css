@@ -57,5 +57,13 @@ header {
   header,
   .navigation_header {
     flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 425px) {
+
+  .link-name {
+    display: none;
   }
 }

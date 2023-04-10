@@ -7,11 +7,17 @@ import "./style.css"
 export default function ProjectsList() {
 
   const [projects, setProjects] = useState(projectsLists);
+  const [projectsBool, setProjectsBool] = useState(false);
+
+  function filterIsTrue(name: string) {
+    setProjectsBool(!projectsBool)
+    const filtered = projectsLists.filter(({ category }) => category === name);
+    projectsBool ? setProjects(filtered) : setProjects(projectsLists)
+  }
 
   function filterFunction(e?: React.MouseEvent<HTMLButtonElement>) {
     const name = (e?.target as HTMLButtonElement)?.name
-    const filtered = projectsLists.filter(({ category }) => category === name);
-    setProjects(filtered);
+    filterIsTrue(name)
   }
 
   return (
