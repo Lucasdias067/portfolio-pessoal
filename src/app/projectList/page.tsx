@@ -10,7 +10,7 @@ export default function ProjectsList() {
 
   const [projects, setProjects] = useState(projectsLists);
   const [activeButton, setActiveButton] = useState("");
-  const [activeBool, setactiveBool] = useState(false);
+  const [activeBool, setActiveBool] = useState(false);
 
   function filterProjects(e: React.MouseEvent<HTMLButtonElement>) {
     const { name } = e.target as HTMLButtonElement
@@ -25,24 +25,23 @@ export default function ProjectsList() {
   }
 
   function filteringProjects(name: string, isProjectFiltered: boolean, hasSameCategory: boolean, filteredProjects: Projects) {
-    if (isProjectFiltered === false) {
+    if (!isProjectFiltered || !hasSameCategory) {
       hasProjectsFiltered(name)
       return setProjects(filteredProjects)
     }
-
-    if (!hasSameCategory) {
-      hasProjectsFiltered(name)
-      setProjects(filteredProjects)
-
-    } else {
-      setactiveBool(false)
-      setProjects(projectsLists)
-    }
+    setActiveBool(false)
+    setProjects(projectsLists)
   }
 
   function hasProjectsFiltered(name: string) {
     setActiveButton(name)
-    setactiveBool(true)
+    setActiveBool(true)
+  }
+
+  function activeStyle(name: string) {
+    const sameName = name === activeButton
+    if (sameName && activeBool) return "active";
+    return ""
   }
 
   return (
@@ -53,10 +52,10 @@ export default function ProjectsList() {
           <div className="effect"></div>
         </h1>
         <div className="container-filter">
-          <button name="JavaScript" onClick={filterProjects} id={activeButton === "JavaScript" && activeBool ? "active" : ""}>JavaScript</button>
-          <button name="React" onClick={filterProjects} id={activeButton === "React" && activeBool ? "active" : ""}>React</button>
-          <button name="Next" onClick={filterProjects} id={activeButton === "Next" && activeBool ? "active" : ""}>Next</button>
-          <button name="React Native" onClick={filterProjects} id={activeButton === "React Native" && activeBool ? "active" : ""}>React Native</button>
+          <button name="JavaScript" onClick={filterProjects} id={activeStyle("JavaScript")}>JavaScript</button>
+          <button name="React" onClick={filterProjects} id={activeStyle("React")}>React</button>
+          <button name="Next" onClick={filterProjects} id={activeStyle("Next")}>Next</button>
+          <button name="React Native" onClick={filterProjects} id={activeStyle("React Native")}>React Native</button>
         </div>
       </div>
       <div className="divisao-sessao">
