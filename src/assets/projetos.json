@@ -49,7 +49,7 @@
   },
   {
     "title": "Formulario",
-    "linkPage": "",
+    "linkPage": "https://github.com/Lucasdias067/formValidation-reactNative",
     "description": "Um projeto de formulario com validação. As tecnologias utilizadas foram: React Native",
     "linkGithub": "https://github.com/Lucasdias067/formValidation-reactNative",
     "id": 7,
@@ -57,7 +57,7 @@
   },
   {
     "title": "OrgsCesta",
-    "linkPage": "",
+    "linkPage": "https://github.com/Lucasdias067/orgsCesta-reactNative",
     "description": "Projeto que simula uma cesta. As tecnologias utilizadas foram: React Native",
     "linkGithub": "https://github.com/Lucasdias067/orgsCesta-reactNative",
     "id": 8,
