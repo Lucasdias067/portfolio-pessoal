@@ -9,7 +9,6 @@ import { faCopy, faLinkSlash, faCheckCircle } from "@fortawesome/free-solid-svg-
 export default function Contact() {
 
   const [showModal, setShowModal] = useState(false);
-
   const copy = "lucasdias067@gmail.com";
 
   function clipboard() {
@@ -33,15 +32,15 @@ export default function Contact() {
           <FontAwesomeIcon icon={faLinkSlash} size="xs" />
           lucasdias067@gmail.com
           <span title="Clique para copiar" onClick={clipboard}>
-            <FontAwesomeIcon icon={faCopy} size="xl" />
+            <FontAwesomeIcon icon={faCopy} size="xl" fade />
           </span>
         </h2>
         {showModal && (
-        <div className="modal">
-          <FontAwesomeIcon icon={faCheckCircle} size="1x" />
-          <p>Copiado para a área de transferência</p>
-        </div>
-      )}
+          <div className="modal">
+            <FontAwesomeIcon icon={faCheckCircle} size="1x" />
+            <p>Copiado para a área de transferência</p>
+          </div>
+        )}
         <div>
           <Link href="https://github.com/Lucasdias067/" target="_blank" className="link-contato" title="GitHub">
             <FontAwesomeIcon icon={faGithub} size="3x" beatFade />

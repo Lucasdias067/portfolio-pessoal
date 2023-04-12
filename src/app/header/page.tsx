@@ -9,11 +9,10 @@ export default function Header() {
         <h1>Portfólio</h1>
       </Link>
       <div className="navigation_header">
-        <a href="#" className="link-header">Início</a>
         <a href="#aboutMe" className="link-header">Sobre Mim</a>
-        <a href="#projectList" className="link-header">Projetos</a>
+        <a href="#projectList" className="link-header">Meus Projetos</a>
         <a href="#skills" className="link-header">Habilidades</a>
-        <a href="#contact" className="link-header projetos-btn">Contato</a>
+        <a href="#contact" className="link-header projetos-btn">Contatos</a>
       </div>
     </header>
   )

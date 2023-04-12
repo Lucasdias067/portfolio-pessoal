@@ -13,6 +13,7 @@
   padding: 25px 20px;
   transition: all 0.7s;
   height: 100%;
+  filter: invert(1) drop-shadow(20px 40px 45px rgb(70, 70, 70));
 }
 
 .img-sobre-mim:hover {
