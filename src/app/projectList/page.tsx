@@ -72,7 +72,7 @@ export default function ProjectsList() {
               <div className="face face2">
                 <div>
                   <p>{description}</p>
-                  <Link href={linkGithub} target="_blank">Respositório</Link>
+                  <span>{id}º</span> <Link href={linkGithub} target="_blank">Respositório</Link>
                 </div>
               </div>
             </div>

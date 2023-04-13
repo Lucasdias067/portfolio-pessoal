@@ -100,7 +100,8 @@
   color: #000;
 }
 
-.face2 a {
+.face2 a,
+.face2 span {
   margin: 15px 0 0;
   display: inline-block;
   font-weight: 900;

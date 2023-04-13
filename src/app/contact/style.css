@@ -11,7 +11,7 @@
   text-align: center;
 }
 
-.email {
+.email a {
   color: #707070;
 }
 
@@ -19,10 +19,10 @@
   margin: 0 10px
 }
 
-.email svg:last-child {
+.email span {
   cursor: pointer;
-  margin: 0 0 0 30px;
   color: #fff;
+  margin: 0 0 0 20px
 }
 
 .link-contato {
@@ -58,10 +58,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 30px;
   }
 
-  .email svg:last-child {
-    margin: 0
+  .email a svg {
+    display: none;
   }
 }

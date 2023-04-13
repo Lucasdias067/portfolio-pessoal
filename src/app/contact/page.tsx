@@ -29,8 +29,10 @@ export default function Contact() {
         </h1>
         <p className="contact-p">Para mais informações, entrar em contato via e-mail ou através das redes sociais abaixo.</p>
         <h2 className="email">
-          <FontAwesomeIcon icon={faLinkSlash} size="xs" />
-          lucasdias067@gmail.com
+          <Link href="mailto:lucasdias067@gmail.com">
+            <FontAwesomeIcon icon={faLinkSlash} size="xs" />
+            lucasdias067@gmail.com
+          </Link>
           <span title="Clique para copiar" onClick={clipboard}>
             <FontAwesomeIcon icon={faCopy} size="xl" fade />
           </span>
