@@ -1,10 +1,18 @@
 [
   {
+    "title": "Credit Card",
+    "linkPage": "https://credit-cards-js.vercel.app/",
+    "description": "Projeto de um cartão de crédito editável. As tecnologias utilizadas foram: JavaScript e TypeScript",
+    "linkGithub": "https://github.com/Lucasdias067/creditCard-TS",
+    "id": 1,
+    "category": "JavaScript"
+  },
+  {
     "title": "Aluroni",
     "linkPage": "https://restaurant-aluroni.vercel.app/",
     "description": "Projeto que replica um restaurante. As tecnologias utilizadas foram: React",
     "linkGithub": "https://github.com/Lucasdias067/restauranteAluroni-React",
-    "id": 1,
+    "id": 2,
     "category": "React"
   },
   {
@@ -12,16 +20,8 @@
     "linkPage": "https://alura-shop.netlify.app/",
     "description": "Projeto de compras, podendo adicionar ao carrinho. As tecnologias utilizadas foram: React",
     "linkGithub": "https://github.com/Lucasdias067/AluraShop-React",
-    "id": 2,
-    "category": "React"
-  },
-  {
-    "title": "Alura Tube",
-    "linkPage": "https://alura--tube.vercel.app/",
-    "description": "Projeto que replica um youtube. As tecnologias utilizadas foram: Next",
-    "linkGithub": "https://github.com/Lucasdias067/aluraTube-Next",
     "id": 3,
-    "category": "Next"
+    "category": "React"
   },
   {
     "title": "To-do list",
@@ -40,12 +40,12 @@
     "category": "React"
   },
   {
-    "title": "Credit Card",
-    "linkPage": "https://credit-cards-js.vercel.app/",
-    "description": "Projeto de um cartão de crédito editável. As tecnologias utilizadas foram: JavaScript e TypeScript",
-    "linkGithub": "https://github.com/Lucasdias067/creditCard-TS",
+    "title": "Alura Tube",
+    "linkPage": "https://alura--tube.vercel.app/",
+    "description": "Projeto que replica um youtube. As tecnologias utilizadas foram: Next",
+    "linkGithub": "https://github.com/Lucasdias067/aluraTube-Next",
     "id": 6,
-    "category": "JavaScript"
+    "category": "Next"
   },
   {
     "title": "Formulario",

@@ -85,7 +85,7 @@
   align-items: center;
   padding: 20px;
   box-sizing: border-box;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0px 25px rgba(0, 0, 0, 0.8);
   transform: translateY(-100px);
 }
 
@@ -124,13 +124,29 @@
     gap: 2%;
   }
 
+  .face {
+    width: 255px;
+  }
+
   .container-filter button {
     font-size: 0.7em;
   }
 }
 
-@media (max-width: 424px) {
+@media (max-width: 633px) {
   .face {
     width: 240px;
+  }
+
+  .divisao-sessao {
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+
+  .container {
+    display: -webkit-flex;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
   }
 }
