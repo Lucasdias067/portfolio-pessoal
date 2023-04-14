@@ -1,3 +1,4 @@
+"use client"
 import "./style.css"
 import Link from "next/link"
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
