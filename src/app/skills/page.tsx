@@ -58,7 +58,7 @@ export default function MySkills() {
         </h1>
         <div className="cards-habilidades">
           {mySkills.map(({ icon, skill, description }) => (
-            <div className="card__giratorio" key={skill}>
+            <div className="card__giratorio" key={skill} >
               <div className="card__giratorio-conteudo">
                 <div className="card__giratorio-conteudo--frente">
                   <Image src={icon.src} alt="" width={icon.width = 64} height={icon.height = 64} />

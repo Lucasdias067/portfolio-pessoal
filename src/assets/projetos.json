@@ -5,7 +5,9 @@
     "description": "Projeto de um cartão de crédito editável. As tecnologias utilizadas foram: JavaScript e TypeScript",
     "linkGithub": "https://github.com/Lucasdias067/creditCard-TS",
     "id": 1,
-    "category": "JavaScript"
+    "category": "JavaScript",
+    "image": "https://user-images.githubusercontent.com/101364762/197881670-f75b760b-bb40-4b39-bc83-70512a85dc46.png",
+    "hasImage": false
   },
   {
     "title": "Aluroni",
@@ -13,7 +15,9 @@
     "description": "Projeto que replica um restaurante. As tecnologias utilizadas foram: React",
     "linkGithub": "https://github.com/Lucasdias067/restauranteAluroni-React",
     "id": 2,
-    "category": "React"
+    "category": "React",
+    "image": "https://user-images.githubusercontent.com/101364762/231903841-25c7ed7b-0381-4079-87c3-b8e7bc253285.png",
+    "hasImage": false
   },
   {
     "title": "Alura Shop",
@@ -21,7 +25,9 @@
     "description": "Projeto de compras, podendo adicionar ao carrinho. As tecnologias utilizadas foram: React",
     "linkGithub": "https://github.com/Lucasdias067/AluraShop-React",
     "id": 3,
-    "category": "React"
+    "category": "React",
+    "image": "https://user-images.githubusercontent.com/101364762/208015223-17f6453d-f385-4ed8-a76a-06508ac4bdde.png",
+    "hasImage": false
   },
   {
     "title": "To-do list",
@@ -29,7 +35,9 @@
     "description": "Projeto TODO LIST com cronomêtro. As tecnologias utilizadas foram: React",
     "linkGithub": "https://github.com/Lucasdias067/todoList-React",
     "id": 4,
-    "category": "React"
+    "category": "React",
+    "image": "https://user-images.githubusercontent.com/101364762/231903672-ef515fef-f7e4-419d-b937-0a0bcc79c0d1.png",
+    "hasImage": false
   },
   {
     "title": "Organo",
@@ -37,7 +45,9 @@
     "description": "Projeto da Alura bastante interativo. As tecnologias utilizadas foram: React",
     "linkGithub": "https://github.com/Lucasdias067/organo-React",
     "id": 5,
-    "category": "React"
+    "category": "React",
+    "image": "https://user-images.githubusercontent.com/101364762/209754236-39810910-cd50-41f4-8b7b-da41a7146c7a.png",
+    "hasImage": false
   },
   {
     "title": "Alura Tube",
@@ -45,7 +55,9 @@
     "description": "Projeto que replica um youtube. As tecnologias utilizadas foram: Next",
     "linkGithub": "https://github.com/Lucasdias067/aluraTube-Next",
     "id": 6,
-    "category": "Next"
+    "category": "Next",
+    "image": "https://user-images.githubusercontent.com/101364762/202537964-e092a9b9-f8bd-4533-9820-015c0a7ca010.png",
+    "hasImage": false
   },
   {
     "title": "Formulario",
@@ -53,7 +65,9 @@
     "description": "Um projeto de formulario com validação. As tecnologias utilizadas foram: React Native",
     "linkGithub": "https://github.com/Lucasdias067/formValidation-reactNative",
     "id": 7,
-    "category": "React Native"
+    "category": "React Native",
+    "image": "",
+    "hasImage": true
   },
   {
     "title": "OrgsCesta",
@@ -61,6 +75,8 @@
     "description": "Projeto que simula uma cesta. As tecnologias utilizadas foram: React Native",
     "linkGithub": "https://github.com/Lucasdias067/orgsCesta-reactNative",
     "id": 8,
-    "category": "React Native"
+    "category": "React Native",
+    "image": "",
+    "hasImage": true
   }
 ]

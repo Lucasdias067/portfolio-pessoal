@@ -1,3 +1,4 @@
+"use client"
 import Section from "./section/page"
 import AboutMe from "./aboutMe/page"
 import ProjectsList from "./projectList/page"
@@ -15,3 +16,4 @@ export default function Home() {
     </main>
   )
 }
+
