@@ -4,15 +4,12 @@ import Link from "next/link"
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import { faDownload } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-AOS.init();
+
 
 export default function Section() {
 
   return (
-    <section className="sessao-inicial" id="sessao-inicial" data-aos="zoom-in" data-aos-mirror="true"
-      data-aos-duration="1500" data-aos-anchor-placement="top-bottom">
+    <section className="sessao-inicial" id="sessao-inicial" >
       <div className="tamanho-textos">
         <p className="ola">Olá, eu sou</p>
         <h1 className="nome-text">Lucas Dias</h1>
