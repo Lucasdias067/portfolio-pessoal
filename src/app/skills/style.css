@@ -6,6 +6,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 10px;
 }
 
 .card__giratorio {
@@ -13,7 +14,6 @@
   width: 300px;
   height: 200px;
   perspective: 1000px;
-  margin: 10px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
 }
 
@@ -61,6 +61,12 @@
   gap: 10px;
 }
 
+@media (max-width: 1037px) {
+  .card__giratorio {
+    width: 270px;
+  }
+}
+
 @media (max-width: 768px) {
   .card__giratorio-conteudo--traseira div {
     height: 90%;
@@ -69,6 +75,6 @@
 
 @media (max-width: 424px) {
   .card__giratorio {
-    width: 250px;
+    width: 240px;
   }
 }

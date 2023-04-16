@@ -12,6 +12,13 @@ export default function ProjectsList() {
   const [activeButton, setActiveButton] = useState("");
   const [activeBool, setActiveBool] = useState(false);
 
+  const buttonFilters = [
+    { name: "JavaScript" },
+    { name: "React" },
+    { name: "Next" },
+    { name: "React Native" },
+  ]
+
   function filterProjects(e: React.MouseEvent<HTMLButtonElement>) {
     const { name } = e.target as HTMLButtonElement
     const filteredProjects = projectsLists.filter(({ category }) => category === name);
@@ -52,10 +59,9 @@ export default function ProjectsList() {
           <div className="effect"></div>
         </h1>
         <div className="container-filter">
-          <button name="JavaScript" onClick={filterProjects} id={activeStyle("JavaScript")}>JavaScript</button>
-          <button name="React" onClick={filterProjects} id={activeStyle("React")}>React</button>
-          <button name="Next" onClick={filterProjects} id={activeStyle("Next")}>Next</button>
-          <button name="React Native" onClick={filterProjects} id={activeStyle("React Native")}>React Native</button>
+          {buttonFilters.map(({ name }) => (
+            <button name={name} onClick={filterProjects} id={activeStyle(name)}>{name}</button>
+          ))}
         </div>
       </div>
       <div className="divisao-sessao">

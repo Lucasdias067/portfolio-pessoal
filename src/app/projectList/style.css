@@ -40,12 +40,16 @@
   align-items: center;
   font-family: 'Montserrat';
   flex-wrap: wrap;
+  gap: 15px;
 }
 
 .card-projeto {
   position: relative;
-  margin: 40px 15px;
   opacity: 0.5;
+}
+
+.card-projeto:nth-child(n + 1):nth-child(-n + 3) {
+  margin-top: 10px;
 }
 
 .card-projeto:hover {
@@ -158,5 +162,9 @@
     overflow-x: scroll;
     flex-wrap: nowrap;
     justify-content: flex-start;
+  }
+
+  .card-projeto {
+    margin-top: 10px;
   }
 }
