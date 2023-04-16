@@ -19,7 +19,7 @@ export default function Footer() {
       </div>
       <div className="rodape js-linksInternos">
         {linkFooter.map(({ name, href, className }) => (
-          <a href={href} className={className}>{name}</a>
+          <a href={href} className={className} key={name}>{name}</a>
         ))}
       </div>
     </footer>

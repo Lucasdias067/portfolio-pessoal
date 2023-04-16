@@ -17,7 +17,7 @@ export default function Header() {
       </Link>
       <div className="navigation_header">
         {linkHeader.map(({ name, href, className }) => (
-          <a href={href} className={className}>{name}</a>
+          <a href={href} className={className} key={name}>{name}</a>
         ))}
       </div>
     </header>

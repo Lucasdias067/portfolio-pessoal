@@ -60,7 +60,7 @@ export default function ProjectsList() {
         </h1>
         <div className="container-filter">
           {buttonFilters.map(({ name }) => (
-            <button name={name} onClick={filterProjects} id={activeStyle(name)}>{name}</button>
+            <button name={name} onClick={filterProjects} id={activeStyle(name)} key={name}>{name}</button>
           ))}
         </div>
       </div>
