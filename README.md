@@ -1,5 +1,4 @@
-
-![Portfólio e mais 15 páginas - Pessoal — Microsoft​ Edge 10_04_2023 17_27_53](https://user-images.githubusercontent.com/101364762/230992843-ee36dcfd-0b99-4d29-887a-896cb8c97d50.png)
+![Portfólio e mais 8 páginas - Pessoal — Microsoft​ Edge 28_04_2023 16_39_39](https://user-images.githubusercontent.com/101364762/235238259-9b641641-f89d-4292-aadd-565d3bbddff7.png)
 
 ![Portfólio e mais 9 páginas - Pessoal — Microsoft​ Edge 28_04_2023 15_27_21](https://user-images.githubusercontent.com/101364762/235238024-c885e591-8d4b-484c-8f9d-a20ef60002e6.png)
 
