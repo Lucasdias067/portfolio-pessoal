@@ -1,9 +1,16 @@
+@keyframes section {
+  0% {
+    transform: translateX(-50%)
+  }
+}
+
 .sessao-inicial {
   display: flex;
   justify-content: center;
   align-items: center;
   transition: 1s;
   padding: 5rem 0 5rem 0;
+  animation: section 3s;
 }
 
 .ola {

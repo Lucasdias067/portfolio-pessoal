@@ -1,11 +1,21 @@
-header,
+@keyframes header {
+  0% {
+    transform: translateY(-100%)
+  }
+}
+
+header {
+  animation: header 1.5s;
+}
+
+.header,
 .navigation_header {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
 
-header {
+.header {
   justify-content: space-between;
   max-width: 96%;
   padding: 20px;
@@ -52,11 +62,40 @@ header {
   font-weight: bold;
 }
 
+.headerMobile {
+  display: none;
+}
+
 @media (max-width: 830px) {
 
-  header,
+  .header,
   .navigation_header {
     flex-direction: column;
     gap: 30px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header {
+    display: none;
+  }
+
+  .headerMobile {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 90%;
+    padding: 20px;
+    margin: 20px;
+    margin-top: 1.5em;
+    border-radius: 15px;
+    background-color: #262626;
+  }
+
+  .menuMobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
   }
 }
