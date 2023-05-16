@@ -31,7 +31,7 @@ export default function Contact() {
         <h2 className="email">
           <Link href="mailto:lucasdias067@gmail.com">
             <FontAwesomeIcon icon={faLinkSlash} size="xs" />
-            lucasdias067@gmail.com
+            {copy}
           </Link>
           <span title="Clique para copiar" onClick={clipboard}>
             <FontAwesomeIcon icon={faCopy} size="xl" fade />

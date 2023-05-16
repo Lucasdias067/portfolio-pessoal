@@ -1,5 +1,4 @@
 "use client"
-import Link from "next/link"
 import "./style.css"
 import { faBars } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -22,9 +21,9 @@ export default function Header() {
   return (
     <header id="header">
       <div className="header">
-        <Link href="/" className="link-name">
+        <a href="/" className="link-name">
           <h1>Portfólio</h1>
-        </Link>
+        </a>
         <div className="navigation_header">
           {navHeader.map(({ name, href, className }) => (
             <a href={href} className={className} key={name}>{name}</a>
@@ -34,9 +33,9 @@ export default function Header() {
 
       <div className="headerMobile">
         <div className="menuMobile">
-          <Link href="/" className="link-name">
+          <a href="/" className="link-name">
             <h1>Portfólio</h1>
-          </Link>
+          </a>
           <FontAwesomeIcon icon={faBars} size="xl" onClick={openMenu} />
         </div>
         {menu &&
