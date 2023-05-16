@@ -78,6 +78,7 @@ header {
 
 @media screen and (max-width: 768px) {
   header {
+    position: initial;
     margin: 0.9rem;
     filter: drop-shadow(0px 2px 5px rgb(70, 70, 70));
   }
