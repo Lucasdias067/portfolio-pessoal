@@ -67,7 +67,7 @@ export default function ProjectsList() {
       <div className="divisao-sessao">
         <div className="container">
           {projects.map(({ id, linkPage, title, description, linkGithub, image, hasImage }) => (
-            <div className="card-projeto" key={id} >
+            <div className="card-projeto" key={id} aria-haspopup="true">
               <Link href={linkPage} target="_blank">
                 <div className="face face1" style={{
                   backgroundImage: `url('${image}')`,

@@ -10,7 +10,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 99;
-  filter: drop-shadow(0px 5px 7px rgb(70, 70, 70));
+  filter: drop-shadow(0px 2px 5px rgb(70, 70, 70));
   transition: filter 10s;
 }
 
@@ -80,7 +80,6 @@ header {
   header {
     position: initial;
     margin: 0.9rem;
-    filter: drop-shadow(0px 2px 5px rgb(70, 70, 70));
   }
 
   .header {
