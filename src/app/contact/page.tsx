@@ -8,7 +8,7 @@ import { faCopy, faLinkSlash, faCheckCircle } from "@fortawesome/free-solid-svg-
 
 export default function Contact() {
 
-  const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModal] = useState(true);
   const copy = "lucasdias067@gmail.com";
 
   function clipboard() {
