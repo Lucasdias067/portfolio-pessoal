@@ -2,7 +2,7 @@
   {
     "title": "Credit Card",
     "linkPage": "https://credit-cards-js.vercel.app/",
-    "description": "Projeto de um cartão de crédito editável. As tecnologias utilizadas foram: JavaScript e TypeScript",
+    "description": "Projeto cartão de crédito editável. As tecnologias utilizadas foram: JavaScript e TypeScript",
     "linkGithub": "https://github.com/Lucasdias067/creditCard-TS",
     "id": 1,
     "category": "JavaScript",
