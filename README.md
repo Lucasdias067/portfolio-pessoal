@@ -1,6 +1,6 @@
-![Portfólio e mais 8 páginas - Pessoal — Microsoft​ Edge 28_04_2023 16_39_39](https://user-images.githubusercontent.com/101364762/235238374-1a26adea-ef3b-452b-bf7d-7f7b6769d284.png)
+![Portfólio e mais 15 páginas - Pessoal — Microsoft​ Edge 16_05_2023 22_38_58](https://github.com/Lucasdias067/Portfolio/assets/101364762/954c38ae-2077-4f71-bc71-e4bfc6d8ab05)
 
-![Portfólio e mais 10 páginas - Pessoal — Microsoft​ Edge 05_05_2023 19_40_57](https://user-images.githubusercontent.com/101364762/236580804-19170d47-b6ab-41c1-91e2-c7e6d0cc7ce6.png)
+![Portfólio e mais 15 páginas - Pessoal — Microsoft​ Edge 16_05_2023 22_39_37](https://github.com/Lucasdias067/Portfolio/assets/101364762/c2757ec3-44a7-43b4-a024-e7e1f34e50bd)
 
 ## Getting Started
 
