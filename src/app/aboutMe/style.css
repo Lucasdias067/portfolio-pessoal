@@ -25,8 +25,8 @@
 }
 
 @media (min-width: 769px) {
-  #aboutMe {
-    padding-top: 20px;
+  .sobre-mim {
+    padding-top: 100px;
     margin-top: 0;
   }
 }
@@ -35,6 +35,10 @@
   .sobre-mim {
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  #sobre-mim-titulo {
+    margin-top: 1rem;
   }
 
   .img-sobre-mim {

@@ -1,5 +1,5 @@
 #skills {
-  margin: 3%;
+  margin: 7.5rem 3% 3% 3%;
 }
 
 .cards-habilidades {
@@ -63,7 +63,7 @@
 
 @media (min-width: 769px) {
   #skills {
-    padding-top: 95px;
+    padding-top: 100px;
     margin-top: 0;
   }
 }
