@@ -135,6 +135,13 @@
   border: none;
 }
 
+@media (min-width: 769px) {
+  #projectList {
+    padding-top: 95px;
+    margin-top: 0;
+  }
+}
+
 @media (max-width: 768px) {
   .container-filter {
     width: 100%;

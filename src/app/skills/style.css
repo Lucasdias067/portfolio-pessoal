@@ -61,6 +61,13 @@
   gap: 10px;
 }
 
+@media (min-width: 769px) {
+  #skills {
+    padding-top: 95px;
+    margin-top: 0;
+  }
+}
+
 @media (max-width: 1037px) {
   .card__giratorio {
     width: 270px;

@@ -24,6 +24,13 @@
   font-size: 1.1rem;
 }
 
+@media (min-width: 769px) {
+  #aboutMe {
+    padding-top: 20px;
+    margin-top: 0;
+  }
+}
+
 @media (max-width: 768px) {
   .sobre-mim {
     flex-wrap: wrap;
