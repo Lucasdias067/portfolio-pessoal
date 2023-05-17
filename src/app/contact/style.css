@@ -13,6 +13,7 @@
 
 .email a {
   color: #707070;
+  font-size: 1.25rem;
 }
 
 .email svg {
@@ -66,6 +67,10 @@
     align-items: center;
     gap: 30px;
     font-size: 20px;
+  }
+
+  .email a {
+    font-size: 1rem;
   }
 
   .email a svg {

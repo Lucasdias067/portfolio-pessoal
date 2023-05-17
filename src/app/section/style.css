@@ -66,10 +66,6 @@
   margin-right: 0.5rem;
 }
 
-button:hover {
-  transform: scale(1.08);
-}
-
 .btn-links {
   display: flex;
   justify-content: space-between;

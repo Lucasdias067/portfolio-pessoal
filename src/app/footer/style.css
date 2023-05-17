@@ -26,8 +26,8 @@ footer {
 }
 
 .rodape a {
-  padding: 0.8rem;
-  font-size: 0.9rem;
+  padding: 0.6rem;
+  font-size: 0.85rem;
 }
 
 .sociais-rodape {
@@ -42,9 +42,9 @@ footer {
   }
 }
 
-@media (max-width: 498px) {
+@media (max-width: 520px) {
   footer {
-    padding: 5px
+    padding: 5px;
   }
 
   .rodape {
