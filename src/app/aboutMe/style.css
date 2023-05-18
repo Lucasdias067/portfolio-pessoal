@@ -1,14 +1,14 @@
-.sobre-mim {
+.aboutMe {
   display: flex;
   align-items: center;
   margin: 10%;
 }
 
-#sobre-mim-titulo {
+#aboutMeTitle {
   align-items: flex-start
 }
 
-.img-sobre-mim {
+.imgAboutMe {
   width: 340px;
   padding: 25px 20px;
   transition: all 0.7s;
@@ -16,32 +16,32 @@
   filter: invert(1) drop-shadow(20px 40px 45px rgb(70, 70, 70));
 }
 
-.img-sobre-mim:hover {
+.imgAboutMe:hover {
   transform: scale(1.02);
 }
 
-.inf-sobre-mim {
+.aboutMeParagraph {
   font-size: 1.1rem;
 }
 
 @media (min-width: 769px) {
-  .sobre-mim {
+  .aboutMe {
     padding-top: 100px;
     margin-top: 0;
   }
 }
 
 @media (max-width: 768px) {
-  .sobre-mim {
+  .aboutMe {
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  #sobre-mim-titulo {
+  #aboutMeTitle {
     margin-top: 1rem;
   }
 
-  .img-sobre-mim {
+  .imgAboutMe {
     width: 240px;
   }
 }

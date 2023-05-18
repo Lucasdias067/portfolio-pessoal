@@ -15,7 +15,7 @@ header {
 }
 
 .header,
-.navigation_header {
+.navigationHeader {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -28,38 +28,38 @@ header {
   background-color: #262626;
 }
 
-.link-name {
+.linkName {
   color: white;
   transition: all 0.6s;
 }
 
-.link-name:hover {
+.linkName:hover {
   color: #ccc;
 }
 
-.navigation_header {
+.navigationHeader {
   gap: 3em;
 }
 
-.link-header {
+.headerLink {
   color: white;
   padding: 10px 0;
   transition: 0.5s;
 }
 
-.link-header:hover {
+.headerLink:hover {
   color: #ccc;
   transform: scale(1.1);
 }
 
-.projetos-btn {
+.contactBtn {
   border: 2px solid #fff;
   padding: 10px 15px;
   border-radius: 15px;
   transition: 0.65s all;
 }
 
-.projetos-btn:hover {
+.contactBtn:hover {
   background-color: #fff;
   color: black;
   font-weight: bold;
@@ -86,7 +86,7 @@ header {
     display: none;
   }
 
-  .navigation_header {
+  .navigationHeader {
     flex-direction: column;
     gap: 30px;
   }

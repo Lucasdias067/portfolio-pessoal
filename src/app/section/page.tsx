@@ -4,17 +4,16 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import { faDownload } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-
 export default function Section() {
 
   return (
-    <section className="sessao-inicial" id="sessao-inicial" >
-      <div className="tamanho-textos">
-        <p className="ola">Olá, eu sou</p>
-        <h1 className="nome-text">Lucas Dias</h1>
-        <p className="desenvolvedor">Desenvolvedor Front-end</p>
-        <div className="btn-container">
-          <div className="btn-links">
+    <section className="sectionInitial">
+      <div className="containerText">
+        <p className="hello">Olá, eu sou</p>
+        <h1 className="textName">Lucas Dias</h1>
+        <p className="developer">Desenvolvedor Front-end</p>
+        <div className="btnContainer">
+          <div className="btnLinks">
             <Link href="https://github.com/Lucasdias067/" target="_blank" title="GitHub">
               <FontAwesomeIcon icon={faGithub} size="4x" />
             </Link>

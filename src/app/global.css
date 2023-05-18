@@ -48,14 +48,14 @@ li {
   border-radius: 3px;
 }
 
-.centralizar {
+.centered {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2.5rem;
 }
 
-.titulos {
+.titles {
   font-size: 2.7rem;
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -63,7 +63,7 @@ li {
 }
 
 @media (max-width: 768px) {
-  .titulos {
+  .titles {
     text-align: center;
     width: 100%;
     font-size: 2rem;
@@ -73,5 +73,4 @@ li {
   .effect {
     height: 3px;
   }
-
 }

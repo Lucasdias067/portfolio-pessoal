@@ -51,19 +51,19 @@ export default function MySkills() {
 
   return (
     <section id="skills">
-      <div className="centralizar">
-        <h1 className="titulos">
+      <div className="centered">
+        <h1 className="titles">
           Habilidades
           <div className="effect"></div>
         </h1>
-        <div className="cards-habilidades">
+        <div className="skillsCards">
           {mySkills.map(({ icon, skill, description }) => (
-            <div className="card__giratorio" key={skill} >
-              <div className="card__giratorio-conteudo">
-                <div className="card__giratorio-conteudo--frente">
+            <div className="card" key={skill} >
+              <div className="cardContent">
+                <div className="cardContent--Front">
                   <Image src={icon.src} alt="" width={icon.width = 64} height={icon.height = 64} />
                 </div>
-                <div className="card__giratorio-conteudo--traseira">
+                <div className="cardContent--Back">
                   <div>
                     <h1>{skill}</h1>
                     <p>{description}</p>

@@ -9,8 +9,8 @@ type Projects = typeof projectsLists
 export default function ProjectsList() {
 
   const [projects, setProjects] = useState(projectsLists);
-  const [activeButton, setActiveButton] = useState("");
-  const [activeBool, setActiveBool] = useState(false);
+  const [buttonName, setButtonName] = useState("");
+  const [hasProjectFiltered, setHasProjectFiltered] = useState(false);
 
   const buttonFilters = [
     { name: "JavaScript" },
@@ -22,59 +22,61 @@ export default function ProjectsList() {
   function filterProjects(e: React.MouseEvent<HTMLButtonElement>) {
     const { name } = e.target as HTMLButtonElement
     const filteredProjects = projectsLists.filter(({ category }) => category === name);
-    const isProjectFiltered = projects.length === filteredProjects.length
 
-    const hasSameCategory = projects.some(({ category }) => {
-      const sameCategory = category === name
-      return sameCategory
+    const ProjectIsNotFiltered = projects.length === projectsLists.length
+
+    const hasDifferentCategory = projects.some(({ category }) => {
+      const differentCategory = category !== name
+      return differentCategory
     })
-    filteringProjects(name, isProjectFiltered, hasSameCategory, filteredProjects)
+
+    filteringProjects(name, ProjectIsNotFiltered, hasDifferentCategory, filteredProjects)
   }
 
-  function filteringProjects(name: string, isProjectFiltered: boolean, hasSameCategory: boolean, filteredProjects: Projects) {
-    if (!isProjectFiltered || !hasSameCategory) {
-      hasProjectsFiltered(name)
+  function filteringProjects(name: string, ProjectIsNotFiltered: boolean, hasDifferentCategory: boolean, filteredProjects: Projects) {
+    if (ProjectIsNotFiltered || hasDifferentCategory) {
+      projectFiltered(name)
       return setProjects(filteredProjects)
     }
-    setActiveBool(false)
+    setHasProjectFiltered(false)
     setProjects(projectsLists)
   }
 
-  function hasProjectsFiltered(name: string) {
-    setActiveButton(name)
-    setActiveBool(true)
+  function projectFiltered(name: string) {
+    setButtonName(name)
+    setHasProjectFiltered(true)
   }
 
   function activeStyle(name: string) {
-    const sameName = name === activeButton
-    if (sameName && activeBool) return "active";
+    const hasSameName = name === buttonName
+    if (hasSameName && hasProjectFiltered) return "active";
     return ""
   }
 
   return (
     <section id="projectList" >
-      <div className="centralizar">
-        <h1 className="titulos">
+      <div className="centered">
+        <h1 className="titles">
           Projetos
           <div className="effect"></div>
         </h1>
-        <div className="container-filter">
+        <div className="containerFilter">
           {buttonFilters.map(({ name }) => (
             <button name={name} onClick={filterProjects} id={activeStyle(name)} key={name}>{name}</button>
           ))}
         </div>
       </div>
-      <div className="divisao-sessao">
+      <div className="sectionContainer">
         <div className="container">
           {projects.map(({ id, linkPage, title, description, linkGithub, image, hasImage }) => (
-            <div className="card-projeto" key={id} aria-haspopup="true">
+            <div className="projectCard" key={id} aria-haspopup="true">
               <Link href={linkPage} target="_blank">
                 <div className="face face1" style={{
                   backgroundImage: `url('${image}')`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center center',
                 }}>
-                  {hasImage && <h3 className="titleH32">{title}</h3>}
+                  {!hasImage && <h3 className="titleH32">{title}</h3>}
                 </div>
               </Link>
               <div className="face face2">

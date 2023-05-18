@@ -5,26 +5,26 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { useState } from "react"
 export default function Header() {
 
-  const [menu, setMenu] = useState(false);
+  const [mobileMenu, setMobileMenu] = useState(false);
 
   const navHeader = [
-    { name: "Sobre Mim", href: "#aboutMe", className: "link-header" },
-    { name: "Meus Projetos", href: "#projectList", className: "link-header" },
-    { name: "Habilidades", href: "#skills", className: "link-header" },
-    { name: "Contatos", href: "#contact", className: "link-header projetos-btn" }
+    { name: "Sobre Mim", href: "#aboutMe", className: "headerLink" },
+    { name: "Meus Projetos", href: "#projectList", className: "headerLink" },
+    { name: "Habilidades", href: "#skills", className: "headerLink" },
+    { name: "Contatos", href: "#contact", className: "headerLink contactBtn" }
   ]
 
-  function openMenu() {
-    setMenu(!menu)
+  function openMobileMenu() {
+    setMobileMenu(!mobileMenu)
   }
 
   return (
     <header id="header">
       <div className="header">
-        <a href="/" className="link-name">
+        <a href="/" className="linkName">
           <h1>Portfólio</h1>
         </a>
-        <div className="navigation_header">
+        <div className="navigationHeader">
           {navHeader.map(({ name, href, className }) => (
             <a href={href} className={className} key={name}>{name}</a>
           ))}
@@ -33,13 +33,13 @@ export default function Header() {
 
       <div className="headerMobile">
         <div className="menuMobile">
-          <a href="/" className="link-name">
+          <a href="/" className="linkName">
             <h1>Portfólio</h1>
           </a>
-          <FontAwesomeIcon icon={faBars} size="xl" onClick={openMenu} />
+          <FontAwesomeIcon icon={faBars} size="xl" onClick={openMobileMenu} />
         </div>
-        {menu &&
-          <div className="navigation_header">
+        {mobileMenu &&
+          <div className="navigationHeader">
             {navHeader.map(({ name, href, className }) => (
               <a href={href} className={className} key={name}>{name}</a>
             ))}

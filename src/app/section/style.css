@@ -4,7 +4,7 @@
   }
 }
 
-.sessao-inicial {
+.sectionInitial {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,14 +13,14 @@
   animation: section 2.5s;
 }
 
-.ola {
+.hello {
   font-size: 1.2rem;
   font-family: 'Montserrat';
   text-transform: uppercase;
   color: #000;
 }
 
-.nome-text {
+.textName {
   font-size: 2.8rem;
   font-family: 'Montserrat';
   font-weight: bold;
@@ -28,7 +28,7 @@
   color: #000;
 }
 
-.desenvolvedor {
+.developer {
   font-size: 1.2rem;
   opacity: 80%;
   font-family: 'Montserrat';
@@ -36,7 +36,7 @@
   color: #000;
 }
 
-.btn-container {
+.btnContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,7 +44,7 @@
   margin-top: 15%;
 }
 
-.btn-container button {
+.btnContainer button {
   display: flex;
   height: 60px;
   font-weight: bold;
@@ -66,23 +66,23 @@
   margin-right: 0.5rem;
 }
 
-.btn-links {
+.btnLinks {
   display: flex;
   justify-content: space-between;
   width: 140px;
 }
 
-.btn-links a {
+.btnLinks a {
   color: #262626;
   transition: 0.7s all;
 }
 
 
-.btn-links a:hover {
+.btnLinks a:hover {
   opacity: 0.55;
 }
 
-.tamanho-textos {
+.containerText {
   padding: 10%;
   width: 75%;
   background-color: #E0E0E0;
@@ -90,17 +90,17 @@
 }
 
 @media (max-width: 700px) {
-  .btn-container {
+  .btnContainer {
     flex-direction: column;
     gap: 20px;
   }
 
-  .tamanho-textos {
+  .containerText {
     padding: 8%;
     width: 80%;
   }
 
-  .desenvolvedor {
+  .developer {
     width: 60%;
   }
 }

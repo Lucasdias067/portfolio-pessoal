@@ -5,7 +5,7 @@
   gap: 1rem;
 }
 
-.divisao-sessao {
+.sectionContainer {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -13,13 +13,13 @@
   align-items: flex-start;
 }
 
-.container-filter {
+.containerFilter {
   display: flex;
   width: 70%;
   gap: 4%;
 }
 
-.container-filter button {
+.containerFilter button {
   color: #fff;
   font-family: 'Montserrat';
   box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, .4);
@@ -47,15 +47,15 @@
   gap: 15px;
 }
 
-.card-projeto {
+.projectCard {
   position: relative;
   opacity: 0.5;
   margin-top: 0.9rem;
 }
 
-.card-projeto:hover,
-.card-projeto:focus,
-.card-projeto:active {
+.projectCard:hover,
+.projectCard:focus,
+.projectCard:active {
   opacity: 1;
 }
 
@@ -75,7 +75,7 @@
   transform: translateY(100px);
 }
 
-.card-projeto:hover .face1 {
+.projectCard:hover .face1 {
   transform: translateY(0);
 }
 
@@ -105,7 +105,7 @@
   justify-content: space-between;
 }
 
-.card-projeto:hover .face2 {
+.projectCard:hover .face2 {
   transform: translateY(0);
   cursor: default;
 }
@@ -144,7 +144,7 @@
 }
 
 @media (max-width: 768px) {
-  .container-filter {
+  .containerFilter {
     width: 100%;
     gap: 2%;
   }
@@ -159,7 +159,7 @@
     width: 240px;
   }
 
-  .divisao-sessao {
+  .sectionContainer {
     flex-wrap: nowrap;
     flex-direction: row;
   }

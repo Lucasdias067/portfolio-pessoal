@@ -7,7 +7,7 @@
     "id": 1,
     "category": "JavaScript",
     "image": "https://user-images.githubusercontent.com/101364762/197881670-f75b760b-bb40-4b39-bc83-70512a85dc46.png",
-    "hasImage": false
+    "hasImage": true
   },
   {
     "title": "Aluroni",
@@ -17,7 +17,7 @@
     "id": 2,
     "category": "React",
     "image": "https://user-images.githubusercontent.com/101364762/231903841-25c7ed7b-0381-4079-87c3-b8e7bc253285.png",
-    "hasImage": false
+    "hasImage": true
   },
   {
     "title": "Alura Shop",
@@ -27,7 +27,7 @@
     "id": 3,
     "category": "React",
     "image": "https://user-images.githubusercontent.com/101364762/208015223-17f6453d-f385-4ed8-a76a-06508ac4bdde.png",
-    "hasImage": false
+    "hasImage": true
   },
   {
     "title": "To-do list",
@@ -37,7 +37,7 @@
     "id": 4,
     "category": "React",
     "image": "https://user-images.githubusercontent.com/101364762/231903672-ef515fef-f7e4-419d-b937-0a0bcc79c0d1.png",
-    "hasImage": false
+    "hasImage": true
   },
   {
     "title": "Organo",
@@ -47,7 +47,7 @@
     "id": 5,
     "category": "React",
     "image": "https://user-images.githubusercontent.com/101364762/209754236-39810910-cd50-41f4-8b7b-da41a7146c7a.png",
-    "hasImage": false
+    "hasImage": true
   },
   {
     "title": "Alura Tube",
@@ -57,7 +57,7 @@
     "id": 6,
     "category": "Next",
     "image": "https://user-images.githubusercontent.com/101364762/202537964-e092a9b9-f8bd-4533-9820-015c0a7ca010.png",
-    "hasImage": false
+    "hasImage": true
   },
   {
     "title": "Formulario",
@@ -67,7 +67,7 @@
     "id": 7,
     "category": "React Native",
     "image": "",
-    "hasImage": true
+    "hasImage": false
   },
   {
     "title": "OrgsCesta",
@@ -77,6 +77,6 @@
     "id": 8,
     "category": "React Native",
     "image": "",
-    "hasImage": true
+    "hasImage": false
   }
 ]

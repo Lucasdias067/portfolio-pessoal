@@ -3,21 +3,21 @@ import "./style.css";
 export default function Footer() {
 
   const linkFooter = [
-    { name: "Inicio", href: "#", className: "link-rodape" },
-    { name: "Sobre Mim", href: "#aboutMe", className: "link-rodape" },
-    { name: "Meus Projetos", href: "#projectList", className: "link-rodape" },
-    { name: "Habilidades", href: "#skills", className: "link-rodape" },
-    { name: "Contatos", href: "#contact", className: "link-rodape" }
+    { name: "Inicio", href: "#", className: "footerLink" },
+    { name: "Sobre Mim", href: "#aboutMe", className: "footerLink" },
+    { name: "Meus Projetos", href: "#projectList", className: "footerLink" },
+    { name: "Habilidades", href: "#skills", className: "footerLink" },
+    { name: "Contatos", href: "#contact", className: "footerLink" }
   ]
 
   return (
     <footer>
       <div>
-        <a href="/" id="link-name2">
+        <a href="/" id="linkName2">
           <h2>Portfólio</h2>
         </a>
       </div>
-      <div className="rodape js-linksInternos">
+      <div className="footer js-linksInternos">
         {linkFooter.map(({ name, href, className }) => (
           <a href={href} className={className} key={name}>{name}</a>
         ))}

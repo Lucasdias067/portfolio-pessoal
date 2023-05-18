@@ -9,10 +9,10 @@ import { faCopy, faLinkSlash, faCheckCircle } from "@fortawesome/free-solid-svg-
 export default function Contact() {
 
   const [showModal, setShowModal] = useState(false);
-  const copy = "lucasdias067@gmail.com";
+  const myEmail = "lucasdias067@gmail.com";
 
-  function clipboard() {
-    navigator.clipboard.writeText(copy)
+  function clipBoard() {
+    navigator.clipboard.writeText(myEmail)
     setShowModal(true);
 
     setTimeout(() => {
@@ -22,18 +22,18 @@ export default function Contact() {
 
   return (
     <section id="contact">
-      <div className="centralizar">
-        <h1 className="titulos">
+      <div className="centered">
+        <h1 className="titles">
           Contato
           <div className="effect"></div>
         </h1>
-        <p className="contact-p">Para mais informações, entrar em contato via e-mail ou através das redes sociais abaixo.</p>
+        <p className="contactP">Para mais informações, entrar em contato via e-mail ou através das redes sociais abaixo.</p>
         <h2 className="email">
           <Link href="mailto:lucasdias067@gmail.com">
             <FontAwesomeIcon icon={faLinkSlash} size="xs" />
-            {copy}
+            {myEmail}
           </Link>
-          <span title="Clique para copiar" onClick={clipboard}>
+          <span title="Clique para copiar" onClick={clipBoard}>
             <FontAwesomeIcon icon={faCopy} size="xl" fade />
           </span>
         </h2>
@@ -44,10 +44,10 @@ export default function Contact() {
           </div>
         )}
         <div>
-          <Link href="https://github.com/Lucasdias067/" target="_blank" className="link-contato" title="GitHub">
+          <Link href="https://github.com/Lucasdias067/" target="_blank" className="contactLink" title="GitHub">
             <FontAwesomeIcon icon={faGithub} size="3x" beatFade />
           </Link>
-          <Link href="https://www.linkedin.com/in/lucasdias067/" target="_blank" className="link-contato" title="LinkedIn">
+          <Link href="https://www.linkedin.com/in/lucasdias067/" target="_blank" className="contactLink" title="LinkedIn">
             <FontAwesomeIcon icon={faLinkedin} size="3x" beatFade />
           </Link>
         </div>
