@@ -107,4 +107,8 @@ header {
     align-items: center;
     width: 100%;
   }
+
+  .menuMobile svg {
+    cursor: pointer;
+  }
 }

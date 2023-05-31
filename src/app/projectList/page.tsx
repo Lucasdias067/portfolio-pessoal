@@ -26,8 +26,7 @@ export default function ProjectsList() {
     const ProjectIsNotFiltered = projects.length === projectsLists.length
 
     const hasDifferentCategory = projects.some(({ category }) => {
-      const differentCategory = category !== name
-      return differentCategory
+      return category !== name
     })
 
     filteringProjects(name, ProjectIsNotFiltered, hasDifferentCategory, filteredProjects)
@@ -43,8 +42,8 @@ export default function ProjectsList() {
   }
 
   function projectFiltered(name: string) {
-    setButtonName(name)
     setHasProjectFiltered(true)
+    setButtonName(name)
   }
 
   function activeStyle(name: string) {

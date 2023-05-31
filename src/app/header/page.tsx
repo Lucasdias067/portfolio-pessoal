@@ -1,6 +1,6 @@
 "use client"
 import "./style.css"
-import { faBars } from "@fortawesome/free-solid-svg-icons"
+import { faBars, faClose } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { useState } from "react"
 export default function Header() {
@@ -16,6 +16,11 @@ export default function Header() {
 
   function openMobileMenu() {
     setMobileMenu(!mobileMenu)
+  }
+
+  function changeMobileIcon() {
+    const iconState = mobileMenu ? faClose : faBars;
+    return iconState;
   }
 
   return (
@@ -36,7 +41,7 @@ export default function Header() {
           <a href="/" className="linkName">
             <h1>Portfólio</h1>
           </a>
-          <FontAwesomeIcon icon={faBars} size="xl" onClick={openMobileMenu} />
+          <FontAwesomeIcon icon={changeMobileIcon()} size="xl" onClick={openMobileMenu} />
         </div>
         {mobileMenu &&
           <div className="navigationHeader">
