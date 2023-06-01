@@ -45,10 +45,10 @@ export default function Contact() {
         )}
         <div>
           <Link href="https://github.com/Lucasdias067/" target="_blank" className="contactLink" title="GitHub">
-            <FontAwesomeIcon icon={faGithub} size="3x" beatFade />
+            <FontAwesomeIcon icon={faGithub} size="3x" />
           </Link>
           <Link href="https://www.linkedin.com/in/lucasdias067/" target="_blank" className="contactLink" title="LinkedIn">
-            <FontAwesomeIcon icon={faLinkedin} size="3x" beatFade />
+            <FontAwesomeIcon icon={faLinkedin} size="3x" />
           </Link>
         </div>
       </div>

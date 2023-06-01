@@ -22,6 +22,7 @@ export default function ProjectsList() {
   function filterProjects(e: React.MouseEvent<HTMLButtonElement>) {
     const { name } = e.target as HTMLButtonElement
     const filteredProjects = projectsLists.filter(({ category }) => category === name);
+    console.log(name);
 
     const ProjectIsNotFiltered = projects.length === projectsLists.length
 
@@ -47,8 +48,8 @@ export default function ProjectsList() {
   }
 
   function activeStyle(name: string) {
-    const hasSameName = name === buttonName
-    if (hasSameName && hasProjectFiltered) return "active";
+    const isTheSameButton = name === buttonName
+    if (isTheSameButton && hasProjectFiltered) return "active";
     return ""
   }
 

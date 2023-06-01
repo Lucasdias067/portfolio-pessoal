@@ -14,6 +14,12 @@ header {
   transition: filter 10s;
 }
 
+#activeAnchor {
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: 1s;
+}
+
 .header,
 .navigationHeader {
   display: flex;
@@ -44,12 +50,11 @@ header {
 .headerLink {
   color: white;
   padding: 10px 0;
-  transition: 0.5s;
+  transition: 0.35s;
 }
 
 .headerLink:hover {
-  color: #ccc;
-  transform: scale(1.1);
+  color: #9e9e9e;
 }
 
 .contactBtn {

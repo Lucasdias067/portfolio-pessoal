@@ -6,6 +6,7 @@ import { useState } from "react"
 export default function Header() {
 
   const [mobileMenu, setMobileMenu] = useState(false);
+  const [navTagName, setNavTagName] = useState("");
 
   const navHeader = [
     { name: "Sobre Mim", href: "#aboutMe", className: "headerLink" },
@@ -13,6 +14,19 @@ export default function Header() {
     { name: "Habilidades", href: "#skills", className: "headerLink" },
     { name: "Contatos", href: "#contact", className: "headerLink contactBtn" }
   ]
+
+  let timeOut: NodeJS.Timeout | null;
+
+  function handleTagName(name: string) {
+    setNavTagName(name);
+    if (timeOut) {
+      clearTimeout(timeOut);
+      timeOut = null;
+    }
+    timeOut = setTimeout(() => {
+      setNavTagName('');
+    }, 1500);
+  }
 
   function openMobileMenu() {
     setMobileMenu(!mobileMenu)
@@ -23,6 +37,12 @@ export default function Header() {
     return iconState;
   }
 
+  function toggleId(name: string) {
+    const isTheSameTag = navTagName === name;
+    if (isTheSameTag) return "activeAnchor";
+    return ""
+  }
+
   return (
     <header id="header">
       <div className="header">
@@ -31,7 +51,15 @@ export default function Header() {
         </a>
         <div className="navigationHeader">
           {navHeader.map(({ name, href, className }) => (
-            <a href={href} className={className} key={name}>{name}</a>
+            <a
+              href={href}
+              className={className}
+              key={name}
+              onClick={() => handleTagName(name)}
+              id={toggleId(name)}
+            >
+              {name}
+            </a>
           ))}
         </div>
       </div>

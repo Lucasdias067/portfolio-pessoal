@@ -28,9 +28,20 @@ footer {
   font-size: 0.9rem;
 }
 
+.footerButton {
+  position: absolute;
+  right: 12%;
+  margin-bottom: 20%;
+}
+
 @media (max-width: 768px) {
   footer {
     flex-direction: column;
+  }
+
+  .footerButton {
+    right: 5%;
+    margin-bottom: 34%;
   }
 }
 
@@ -45,5 +56,11 @@ footer {
 
   #linkName2 {
     display: none;
+  }
+
+  .footerButton {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
   }
 }

@@ -1,14 +1,20 @@
+"use client"
 import "./style.css";
+import { faCircleArrowUp } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export default function Footer() {
 
   const linkFooter = [
-    { name: "Inicio", href: "#", className: "footerLink" },
     { name: "Sobre Mim", href: "#aboutMe", className: "footerLink" },
     { name: "Meus Projetos", href: "#projectList", className: "footerLink" },
     { name: "Habilidades", href: "#skills", className: "footerLink" },
     { name: "Contatos", href: "#contact", className: "footerLink" }
   ]
+
+  function handleScroll() {
+    window.scrollTo(0, 0)
+  }
 
   return (
     <footer>
@@ -22,6 +28,13 @@ export default function Footer() {
           <a href={href} className={className} key={name}>{name}</a>
         ))}
       </div>
+      <FontAwesomeIcon
+        icon={faCircleArrowUp}
+        onClick={() => handleScroll()}
+        className="footerButton"
+        size="3x"
+        beatFade
+      />
     </footer>
   )
 }
