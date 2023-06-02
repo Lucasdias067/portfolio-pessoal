@@ -39,8 +39,7 @@ export default function Footer() {
         icon={faCircleArrowUp}
         onClick={() => handleScroll()}
         className="scrollUp"
-        // size={widthWatcher()}
-        size="3x"
+        size={widthWatcher()}
         beatFade
         title="Scroll Up"
       />
