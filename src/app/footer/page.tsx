@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export default function Footer() {
 
-  const width = window?.innerWidth;
+  const width = document.documentElement.clientWidth
   console.log(width > 768);
 
   const linkFooter = [
