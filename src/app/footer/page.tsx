@@ -17,9 +17,11 @@ export default function Footer() {
     window.scrollTo(0, 0)
   }
 
-  function widthWatcher(): SizeProp {
-    if (window.innerWidth > 768) return '3x'
-    return '2x'
+  function widthWatcher(): SizeProp | undefined {
+    if (typeof window !== undefined) {
+      if (window.innerWidth > 768) return '3x'
+      return '2x'
+    }
   }
 
   return (
