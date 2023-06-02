@@ -1,4 +1,5 @@
 "use client"
+import { SizeProp } from "@fortawesome/fontawesome-svg-core";
 import "./style.css";
 import { faCircleArrowUp } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -14,6 +15,11 @@ export default function Footer() {
 
   function handleScroll() {
     window.scrollTo(0, 0)
+  }
+
+  function widthWatcher(): SizeProp {
+    if (window.innerWidth > 768) return '3x'
+    return '2x'
   }
 
   return (
@@ -32,7 +38,7 @@ export default function Footer() {
         icon={faCircleArrowUp}
         onClick={() => handleScroll()}
         className="scrollUp"
-        size="3x"
+        size={widthWatcher()}
         beatFade
         title="Scroll Up"
       />

@@ -29,8 +29,8 @@ footer {
 
 .scrollUp {
   position: absolute;
-  right: 12%;
-  margin-bottom: 20%;
+  right: 10%;
+  margin-bottom: 19%;
 }
 
 @media (max-width: 768px) {
@@ -40,7 +40,7 @@ footer {
 
   .scrollUp {
     right: 5%;
-    margin-bottom: 34%;
+    margin-bottom: 36%;
   }
 }
 
@@ -58,8 +58,7 @@ footer {
   }
 
   .scrollUp {
-    display: none;
-    visibility: hidden;
-    opacity: 0;
+    right: 4%;
+    margin-bottom: 65%;
   }
 }
