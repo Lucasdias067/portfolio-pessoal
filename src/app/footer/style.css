@@ -15,8 +15,7 @@ footer {
 
 .footerLink:hover,
 #linkName2:hover {
-  color: #ccc;
-  transform: scale(1.1);
+  color: #646464;
 }
 
 .footer {
@@ -28,7 +27,7 @@ footer {
   font-size: 0.9rem;
 }
 
-.footerButton {
+.scrollUp {
   position: absolute;
   right: 12%;
   margin-bottom: 20%;
@@ -39,7 +38,7 @@ footer {
     flex-direction: column;
   }
 
-  .footerButton {
+  .scrollUp {
     right: 5%;
     margin-bottom: 34%;
   }
@@ -58,7 +57,7 @@ footer {
     display: none;
   }
 
-  .footerButton {
+  .scrollUp {
     display: none;
     visibility: hidden;
     opacity: 0;

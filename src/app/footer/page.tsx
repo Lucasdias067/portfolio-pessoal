@@ -25,15 +25,16 @@ export default function Footer() {
       </div>
       <div className="footer js-linksInternos">
         {linkFooter.map(({ name, href, className }) => (
-          <a href={href} className={className} key={name}>{name}</a>
+          <a href={href} className={className} key={name} title={name}>{name}</a>
         ))}
       </div>
       <FontAwesomeIcon
         icon={faCircleArrowUp}
         onClick={() => handleScroll()}
-        className="footerButton"
+        className="scrollUp"
         size="3x"
         beatFade
+        title="Scroll Up"
       />
     </footer>
   )

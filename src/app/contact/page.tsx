@@ -23,7 +23,7 @@ export default function Contact() {
   return (
     <section id="contact">
       <div className="centered">
-        <h1 className="titles">
+        <h1 className="titles" title='Contato'>
           Contato
           <div className="effect"></div>
         </h1>

@@ -17,6 +17,12 @@ export default function Header() {
 
   let timeOut: NodeJS.Timeout | null;
 
+  function toggleId(name: string) {
+    const isTheSameTag = navTagName === name;
+    if (isTheSameTag) return "activeAnchor";
+    return ""
+  }
+
   function handleTagName(name: string) {
     setNavTagName(name);
     if (timeOut) {
@@ -25,7 +31,7 @@ export default function Header() {
     }
     timeOut = setTimeout(() => {
       setNavTagName('');
-    }, 1500);
+    }, 2500);
   }
 
   function openMobileMenu() {
@@ -35,12 +41,6 @@ export default function Header() {
   function changeMobileIcon() {
     const iconState = mobileMenu ? faClose : faBars;
     return iconState;
-  }
-
-  function toggleId(name: string) {
-    const isTheSameTag = navTagName === name;
-    if (isTheSameTag) return "activeAnchor";
-    return ""
   }
 
   return (
@@ -57,6 +57,7 @@ export default function Header() {
               key={name}
               onClick={() => handleTagName(name)}
               id={toggleId(name)}
+              title={name}
             >
               {name}
             </a>

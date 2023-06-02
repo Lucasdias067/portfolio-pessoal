@@ -28,10 +28,6 @@ svg {
   cursor: pointer;
 }
 
-button:hover {
-  transform: scale(1.08);
-}
-
 a {
   text-decoration: none;
 }

@@ -12,7 +12,7 @@ export default function AboutMe() {
         </div>
         <div>
           <div className="centered" id="aboutMeTitle">
-            <h1 className="titles">
+            <h1 className="titles" title='Sobre Mim'>
               Sobre mim
               <div className="effect"> </div>
             </h1>

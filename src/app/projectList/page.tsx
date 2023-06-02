@@ -56,13 +56,21 @@ export default function ProjectsList() {
   return (
     <section id="projectList" >
       <div className="centered">
-        <h1 className="titles">
+        <h1 className="titles" title='Projetos'>
           Projetos
           <div className="effect"></div>
         </h1>
         <div className="containerFilter">
           {buttonFilters.map(({ name }) => (
-            <button name={name} onClick={filterProjects} id={activeStyle(name)} key={name}>{name}</button>
+            <button
+              name={name}
+              onClick={filterProjects}
+              id={activeStyle(name)}
+              key={name}
+              title={name}
+            >
+              {name}
+            </button>
           ))}
         </div>
       </div>
@@ -70,7 +78,7 @@ export default function ProjectsList() {
         <div className="container">
           {projects.map(({ id, linkPage, title, description, linkGithub, image, hasImage }) => (
             <div className="projectCard" key={id} aria-haspopup="true">
-              <Link href={linkPage} target="_blank">
+              <Link href={linkPage} target="_blank" title={title}>
                 <div className="face face1" style={{
                   backgroundImage: `url('${image}')`,
                   backgroundSize: 'cover',

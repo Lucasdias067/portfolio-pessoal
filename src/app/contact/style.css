@@ -29,6 +29,11 @@
 .contactLink {
   color: #fafafa;
   margin: 0 18px;
+  transition: 0.5s;
+}
+
+.contactLink:hover {
+  opacity: .5;
 }
 
 .modal {

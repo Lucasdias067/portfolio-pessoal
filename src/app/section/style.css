@@ -77,9 +77,8 @@
   transition: 0.7s all;
 }
 
-
 .btnLinks a:hover {
-  opacity: 0.55;
+  opacity: .6;
 }
 
 .containerText {
