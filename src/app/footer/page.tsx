@@ -6,9 +6,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export default function Footer() {
 
-  const width = document.documentElement.clientWidth
-  console.log(width > 768);
-
   const linkFooter = [
     { name: "Sobre Mim", href: "#aboutMe", className: "footerLink" },
     { name: "Meus Projetos", href: "#projectList", className: "footerLink" },
@@ -20,12 +17,11 @@ export default function Footer() {
     window.scrollTo(0, 0)
   }
 
-  // function widthWatcher(): SizeProp | undefined {
-  //   if (typeof window !== undefined) {
-  //     if (width > 768) return '3x'
-  //     return '2x'
-  //   }
-  // }
+  function widthWatcher(): SizeProp | undefined {
+    const width = window?.innerWidth ?? 0
+    if (width > 768) return '3x'
+    return '2x'
+  }
 
   return (
     <footer>
