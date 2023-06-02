@@ -6,8 +6,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export default function Footer() {
 
-  const width = window.innerWidth;
-  console.log(width > 768);
+  // const width = window.innerWidth;
+  // console.log(width > 768);
 
   const linkFooter = [
     { name: "Sobre Mim", href: "#aboutMe", className: "footerLink" },
