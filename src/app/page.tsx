@@ -5,6 +5,7 @@ import MySkills from "./skills/page"
 import Contact from "./contact/page"
 
 export default function Home() {
+
   return (
     <main>
       <Section />

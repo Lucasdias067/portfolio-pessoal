@@ -3,10 +3,11 @@ import "./style.css"
 import { faBars, faClose } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { useState } from "react"
+
 export default function Header() {
 
-  const [mobileMenu, setMobileMenu] = useState(false);
   const [navTagName, setNavTagName] = useState("");
+  const [mobileMenu, setMobileMenu] = useState(false);
 
   const navHeader = [
     { name: "Sobre Mim", href: "#aboutMe", className: "headerLink" },

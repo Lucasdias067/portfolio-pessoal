@@ -3,8 +3,11 @@ import { SizeProp } from "@fortawesome/fontawesome-svg-core";
 import "./style.css";
 import { faCircleArrowUp } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { useEffect, useState } from 'react';
 
 export default function Footer() {
+
+  const [mobileWidth, setMobileWidth] = useState(false);
 
   const linkFooter = [
     { name: "Sobre Mim", href: "#aboutMe", className: "footerLink" },
@@ -17,10 +20,24 @@ export default function Footer() {
     window.scrollTo(0, 0)
   }
 
-  function widthWatcher(): SizeProp | undefined {
-    const width = window?.innerWidth ?? 0
-    if (width > 768) return '3x'
-    return '2x'
+  useEffect(() => {
+    function widthWatcher() {
+      if (window.innerWidth <= 768) return setMobileWidth(true);
+      setMobileWidth(false);
+    }
+
+    widthWatcher();
+
+    window.addEventListener('resize', widthWatcher);
+
+    return () => {
+      window.removeEventListener('resize', widthWatcher);
+    };
+  }, []);
+
+  function iconSize(): SizeProp {
+    if (mobileWidth) return '2x'
+    return '3x'
   }
 
   return (
@@ -39,9 +56,8 @@ export default function Footer() {
         icon={faCircleArrowUp}
         onClick={() => handleScroll()}
         className="scrollUp"
-        size={widthWatcher()}
+        size={iconSize()}
         beatFade
-        title="Scroll Up"
       />
     </footer>
   )
