@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 export default function Footer() {
 
   const width = window.innerWidth;
+  console.log(width > 768);
 
   const linkFooter = [
     { name: "Sobre Mim", href: "#aboutMe", className: "footerLink" },
@@ -19,12 +20,12 @@ export default function Footer() {
     window.scrollTo(0, 0)
   }
 
-  function widthWatcher(): SizeProp | undefined {
-    if (typeof window !== undefined) {
-      if (width > 768) return '3x'
-      return '2x'
-    }
-  }
+  // function widthWatcher(): SizeProp | undefined {
+  //   if (typeof window !== undefined) {
+  //     if (width > 768) return '3x'
+  //     return '2x'
+  //   }
+  // }
 
   return (
     <footer>
@@ -42,7 +43,8 @@ export default function Footer() {
         icon={faCircleArrowUp}
         onClick={() => handleScroll()}
         className="scrollUp"
-        size={widthWatcher()}
+        // size={widthWatcher()}
+        size="3x"
         beatFade
         title="Scroll Up"
       />
