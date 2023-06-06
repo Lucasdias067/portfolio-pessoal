@@ -10,14 +10,21 @@ export default function Footer() {
   const [mobileWidth, setMobileWidth] = useState(false);
 
   const linkFooter = [
-    { name: "Sobre Mim", href: "#aboutMe", className: "footerLink" },
-    { name: "Meus Projetos", href: "#projectList", className: "footerLink" },
-    { name: "Habilidades", href: "#skills", className: "footerLink" },
-    { name: "Contatos", href: "#contact", className: "footerLink" }
+    { name: "Sobre Mim", href: "#aboutMe", className: "footerLink styleNav" },
+    { name: "Meus Projetos", href: "#projectList", className: "footerLink styleNav" },
+    { name: "Habilidades", href: "#skills", className: "footerLink styleNav" },
+    { name: "Contatos", href: "#contact", className: "footerLink styleNav" }
   ]
 
   function handleScroll() {
-    window.scrollTo(0, 0)
+    const scrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    };
+
+    scrollToTop();
   }
 
   useEffect(() => {
