@@ -15,10 +15,9 @@ export default function Contact() {
     navigator.clipboard.writeText(myEmail)
     setShowModal(true);
 
-    const timeout = setTimeout(() => {
+    setTimeout(() => {
       setShowModal(false)
     }, 3500)
-    clearTimeout(timeout)
   }
 
   return (
