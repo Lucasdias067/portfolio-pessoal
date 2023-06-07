@@ -15,9 +15,10 @@ export default function Contact() {
     navigator.clipboard.writeText(myEmail)
     setShowModal(true);
 
-    setTimeout(() => {
+    const timeout = setTimeout(() => {
       setShowModal(false)
     }, 3500)
+    clearTimeout(timeout)
   }
 
   return (
@@ -27,14 +28,14 @@ export default function Contact() {
           Contato
           <div className="effect"></div>
         </h1>
-        <p className="contactP">Para mais informações, entrar em contato via e-mail ou através das redes sociais abaixo.</p>
+        <p className="contactP">Entrar em contato via e-mail ou através das redes sociais abaixo para mais informações sobre o meu trabalho.</p>
         <h2 className="email">
           <Link href="mailto:lucasdias067@gmail.com">
             <FontAwesomeIcon icon={faLinkSlash} size="xs" />
             {myEmail}
           </Link>
           <span title="Clique para copiar" onClick={clipBoard}>
-            <FontAwesomeIcon icon={faCopy} size="xl" fade />
+            <FontAwesomeIcon icon={faCopy} size="lg" fade />
           </span>
         </h2>
         {showModal && (

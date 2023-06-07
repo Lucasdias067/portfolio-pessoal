@@ -58,7 +58,7 @@ export default function MySkills() {
         </h1>
         <div className="skillsCards">
           {mySkills.map(({ icon, skill, description }) => (
-            <div className="card" key={skill} title={skill} >
+            <div className="card" key={skill} >
               <div className="cardContent">
                 <div className="cardContent--Front">
                   <Image src={icon.src} alt="" width={icon.width = 64} height={icon.height = 64} />

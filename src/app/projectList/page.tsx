@@ -22,13 +22,8 @@ export default function ProjectsList() {
   function filterProjects(e: React.MouseEvent<HTMLButtonElement>) {
     const { name } = e.target as HTMLButtonElement
     const filteredProjects = projectsLists.filter(({ category }) => category === name);
-    console.log(name);
-
     const ProjectIsNotFiltered = projects.length === projectsLists.length
-
-    const hasDifferentCategory = projects.some(({ category }) => {
-      return category !== name
-    })
+    const hasDifferentCategory = projects.some(({ category }) => category !== name)
 
     filteringProjects(name, ProjectIsNotFiltered, hasDifferentCategory, filteredProjects)
   }

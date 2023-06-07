@@ -59,13 +59,9 @@ export default function Footer() {
           <a href={href} className={className} key={name} title={name}>{name}</a>
         ))}
       </div>
-      <FontAwesomeIcon
-        icon={faCircleArrowUp}
-        onClick={() => handleScroll()}
-        className="scrollUp"
-        size={iconSize()}
-        beatFade
-      />
+      <div className="scrollUp" onClick={handleScroll} title="Voltar ao topo" >
+        <FontAwesomeIcon icon={faCircleArrowUp} size={iconSize()} beatFade />
+      </div>
     </footer>
   )
 }

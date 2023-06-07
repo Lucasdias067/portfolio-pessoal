@@ -52,12 +52,13 @@ header {
   padding: 10px 15px;
   border-radius: 15px;
   transition: 0.65s all;
+  font-weight: bold;
+  font-size: .96rem;
 }
 
 .contactBtn:hover {
   background-color: #fff;
   color: black;
-  font-weight: bold;
 }
 
 .headerMobile {
@@ -67,7 +68,7 @@ header {
 @media (max-width: 900px) {
 
   a {
-    font-size: 0.9rem
+    font-size: 0.85rem
   }
 }
 
