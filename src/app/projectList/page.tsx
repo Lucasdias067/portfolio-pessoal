@@ -10,7 +10,6 @@ export default function ProjectsList() {
 
   const [projects, setProjects] = useState(projectsLists);
   const [buttonName, setButtonName] = useState("");
-  const [hasProjectFiltered, setHasProjectFiltered] = useState(false);
 
   const buttonFilters = [
     { name: "JavaScript" },
@@ -19,7 +18,7 @@ export default function ProjectsList() {
     { name: "React Native" },
   ]
 
-  function filterProjects(e: React.MouseEvent<HTMLButtonElement>) {
+  function handleFilterProjects(e: React.MouseEvent<HTMLButtonElement>) {
     const { name } = e.target as HTMLButtonElement
     const filteredProjects = projectsLists.filter(({ category }) => category === name);
     const ProjectIsNotFiltered = projects.length === projectsLists.length
@@ -30,22 +29,16 @@ export default function ProjectsList() {
 
   function filteringProjects(name: string, ProjectIsNotFiltered: boolean, hasDifferentCategory: boolean, filteredProjects: Projects) {
     if (ProjectIsNotFiltered || hasDifferentCategory) {
-      projectFiltered(name)
+      setButtonName(name)
       return setProjects(filteredProjects)
     }
-    setHasProjectFiltered(false)
+    setButtonName("")
     setProjects(projectsLists)
   }
 
-  function projectFiltered(name: string) {
-    setHasProjectFiltered(true)
-    setButtonName(name)
-  }
-
-  function activeStyle(name: string) {
+  function buttonActiveStyle(name: string) {
     const isTheSameButton = name === buttonName
-    if (isTheSameButton && hasProjectFiltered) return "active";
-    return ""
+    return isTheSameButton ? "active" : ""
   }
 
   return (
@@ -59,8 +52,8 @@ export default function ProjectsList() {
           {buttonFilters.map(({ name }) => (
             <button
               name={name}
-              onClick={filterProjects}
-              id={activeStyle(name)}
+              onClick={handleFilterProjects}
+              id={buttonActiveStyle(name)}
               key={name}
               title={name}
             >

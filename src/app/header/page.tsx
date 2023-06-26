@@ -6,7 +6,6 @@ import { useState } from "react"
 
 export default function Header() {
 
-  // const [navTagName, setNavTagName] = useState("");
   const [mobileMenu, setMobileMenu] = useState(false);
 
   const navHeader = [
@@ -15,25 +14,6 @@ export default function Header() {
     { name: "Habilidades", href: "#skills", className: "headerLink styleNav" },
     { name: "Contatos", href: "#contact", className: "headerLink contactBtn" }
   ]
-
-  // let timeOut: NodeJS.Timeout | null;
-
-  // function toggleId(name: string) {
-  //   const isTheSameTag = navTagName === name;
-  //   if (isTheSameTag) return "activeAnchor";
-  //   return ""
-  // }
-
-  // function handleTagName(name: string) {
-  //   setNavTagName(name);
-  //   if (timeOut) {
-  //     clearTimeout(timeOut);
-  //     timeOut = null;
-  //   }
-  //   timeOut = setTimeout(() => {
-  //     setNavTagName('');
-  //   }, 2500);
-  // }
 
   function openMobileMenu() {
     setMobileMenu(!mobileMenu)
@@ -56,8 +36,6 @@ export default function Header() {
               href={href}
               className={className}
               key={name}
-              // onClick={() => handleTagName(name)}
-              // id={toggleId(name)}
               title={name}
             >
               {name}

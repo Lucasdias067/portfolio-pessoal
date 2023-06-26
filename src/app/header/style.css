@@ -14,6 +14,10 @@ header {
   transition: filter 10s;
 }
 
+.activeAnchor {
+  color: #535353;
+}
+
 .header,
 .navigationHeader {
   display: flex;
