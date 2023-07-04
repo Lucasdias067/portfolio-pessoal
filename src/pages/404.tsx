@@ -7,5 +7,5 @@ export default function Custom404() {
       <p>Volte para a página inicial: </p>
       <Link href='https://portfolio-lucasdias.netlify.app/' style={{ fontSize: '1.5rem', textDecoration: 'none' }} title="Clique aqui">Portfolio</Link>
     </div>
-  )
+  );
 }
