@@ -1,22 +1,25 @@
-"use client"
-import "./style.css"
-import { faBars, faClose } from "@fortawesome/free-solid-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { useState } from "react"
+'use client';
+import './style.css';
+import { faBars, faClose } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useState } from 'react';
 
 export default function Header() {
-
   const [mobileMenu, setMobileMenu] = useState(false);
 
   const navHeader = [
-    { name: "Sobre Mim", href: "#aboutMe", className: "headerLink styleNav" },
-    { name: "Meus Projetos", href: "#projectList", className: "headerLink styleNav" },
-    { name: "Habilidades", href: "#skills", className: "headerLink styleNav" },
-    { name: "Contatos", href: "#contact", className: "headerLink contactBtn" }
-  ]
+    { name: 'Sobre Mim', href: '#aboutMe', className: 'headerLink styleNav' },
+    {
+      name: 'Meus Projetos',
+      href: '#projectList',
+      className: 'headerLink styleNav'
+    },
+    { name: 'Habilidades', href: '#skills', className: 'headerLink styleNav' },
+    { name: 'Contatos', href: '#contact', className: 'headerLink contactBtn' }
+  ];
 
   function openMobileMenu() {
-    setMobileMenu(!mobileMenu)
+    setMobileMenu(!mobileMenu);
   }
 
   function changeMobileIcon() {
@@ -25,41 +28,41 @@ export default function Header() {
   }
 
   return (
-    <header id="header">
-      <div className="header">
-        <a href="/" className="linkName">
+    <header id='header'>
+      <div className='header'>
+        <a href='/' className='linkName'>
           <h1>Portfólio</h1>
         </a>
-        <div className="navigationHeader">
+        <div className='navigationHeader'>
           {navHeader.map(({ name, href, className }) => (
-            <a
-              href={href}
-              className={className}
-              key={name}
-              title={name}
-            >
+            <a href={href} className={className} key={name} title={name}>
               {name}
             </a>
           ))}
         </div>
       </div>
 
-      <div className="headerMobile">
-        <div className="menuMobile">
-          <a href="/" className="linkName">
+      <div className='headerMobile'>
+        <div className='menuMobile'>
+          <a href='/' className='linkName'>
             <h1>Portfólio</h1>
           </a>
-          <FontAwesomeIcon icon={changeMobileIcon()} size="xl" onClick={openMobileMenu} />
+          <FontAwesomeIcon
+            icon={changeMobileIcon()}
+            size='xl'
+            onClick={openMobileMenu}
+          />
         </div>
-        {mobileMenu &&
-          <div className="navigationHeader">
+        {mobileMenu && (
+          <div className='navigationHeader'>
             {navHeader.map(({ name, href, className }) => (
-              <a href={href} className={className} key={name}>{name}</a>
+              <a href={href} className={className} key={name}>
+                {name}
+              </a>
             ))}
           </div>
-        }
+        )}
       </div>
     </header>
-  )
+  );
 }
-

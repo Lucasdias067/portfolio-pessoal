@@ -1,20 +1,23 @@
-"use client"
-import { SizeProp } from "@fortawesome/fontawesome-svg-core";
-import "./style.css";
-import { faCircleArrowUp } from "@fortawesome/free-solid-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+'use client';
+import { SizeProp } from '@fortawesome/fontawesome-svg-core';
+import './style.css';
+import { faCircleArrowUp } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useEffect, useState } from 'react';
 
 export default function Footer() {
-
   const [mobileWidth, setMobileWidth] = useState(false);
 
   const linkFooter = [
-    { name: "Sobre Mim", href: "#aboutMe", className: "footerLink styleNav" },
-    { name: "Meus Projetos", href: "#projectList", className: "footerLink styleNav" },
-    { name: "Habilidades", href: "#skills", className: "footerLink styleNav" },
-    { name: "Contatos", href: "#contact", className: "footerLink styleNav" }
-  ]
+    { name: 'Sobre Mim', href: '#aboutMe', className: 'footerLink styleNav' },
+    {
+      name: 'Meus Projetos',
+      href: '#projectList',
+      className: 'footerLink styleNav'
+    },
+    { name: 'Habilidades', href: '#skills', className: 'footerLink styleNav' },
+    { name: 'Contatos', href: '#contact', className: 'footerLink styleNav' }
+  ];
 
   function handleScroll() {
     const scrollToTop = () => {
@@ -43,25 +46,27 @@ export default function Footer() {
   }, []);
 
   function iconSize(): SizeProp {
-    if (mobileWidth) return '2x'
-    return '3x'
+    if (mobileWidth) return '2x';
+    return '3x';
   }
 
   return (
     <footer>
       <div>
-        <a href="/" id="linkName2">
+        <a href='/' id='linkName2'>
           <h2>Portfólio</h2>
         </a>
       </div>
-      <div className="footer js-linksInternos">
+      <div className='footer js-linksInternos'>
         {linkFooter.map(({ name, href, className }) => (
-          <a href={href} className={className} key={name} title={name}>{name}</a>
+          <a href={href} className={className} key={name} title={name}>
+            {name}
+          </a>
         ))}
       </div>
-      <div className="scrollUp" onClick={handleScroll} title="Voltar ao topo" >
+      <div className='scrollUp' onClick={handleScroll} title='Voltar ao topo'>
         <FontAwesomeIcon icon={faCircleArrowUp} size={iconSize()} beatFade />
       </div>
     </footer>
-  )
+  );
 }

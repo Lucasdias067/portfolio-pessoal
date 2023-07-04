@@ -1,9 +1,16 @@
 {
-  "extends": [
-    "next"
-  ]
-  // "rules": {
-  //   "react/no-unescaped-entities": "off",
-  //   "@next/next/no-page-custom-font": "off"
-  // }
+  "extends": ["next/core-web-vitals", "@rocketseat/eslint-config/react"],
+  "rules": {
+    "prettier/prettier":[ "error",
+    {
+      "singleQuote": true,
+			"jsxSingleQuote": true,
+			"semi": true,
+			"bracketSpacing": true,
+			"trailingComma": "none",
+      "endOfLine": "auto"
+			}],
+      "no-undef": "off",
+			"no-unused-vars": "error"
+  }
 }
