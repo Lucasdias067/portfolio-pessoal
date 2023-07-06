@@ -7,7 +7,12 @@ export default function AboutMe() {
     <section id='aboutMe'>
       <div className='aboutMe'>
         <div>
-          <Image src={notebook} alt='Notebook' className='imgAboutMe' />
+          <Image
+            src={notebook}
+            alt='Notebook'
+            className='imgAboutMe'
+            priority
+          />
         </div>
         <div>
           <div className='centered' id='aboutMeTitle'>
