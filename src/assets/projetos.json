@@ -50,11 +50,31 @@
     "hasImage": true
   },
   {
+    "title": "Finanças Pessoais",
+    "linkPage": "https://my-finance-sigma.vercel.app/",
+    "description": "Projeto de finanças Pessoais. As tecnologias utilizadas foram: Next",
+    "linkGithub": "https://github.com/Lucasdias067/aluraTube-Next",
+    "id": 6,
+    "category": "Next",
+    "image": "https://user-images.githubusercontent.com/101364762/251608198-eb37d956-0fdc-4325-9c61-ebd6a72a2227.png",
+    "hasImage": true
+  },
+  {
+    "title": "Formulario",
+    "linkPage": "https://my-form-validation.vercel.app/",
+    "description": "Validação de formulário dinâmico. As tecnologias utilizadas foram: Next",
+    "linkGithub": "https://github.com/Lucasdias067/myFormValidation",
+    "id": 7,
+    "category": "Next",
+    "image": "https://user-images.githubusercontent.com/101364762/251610756-d90c3fd2-498b-41fc-a958-cd719f2e0d1d.jpeg",
+    "hasImage": true
+  },
+  {
     "title": "Alura Tube",
     "linkPage": "https://alura--tube.vercel.app/",
     "description": "Projeto que replica um youtube. As tecnologias utilizadas foram: Next",
     "linkGithub": "https://github.com/Lucasdias067/aluraTube-Next",
-    "id": 6,
+    "id": 8,
     "category": "Next",
     "image": "https://user-images.githubusercontent.com/101364762/202537964-e092a9b9-f8bd-4533-9820-015c0a7ca010.png",
     "hasImage": true
@@ -64,7 +84,7 @@
     "linkPage": "https://github.com/Lucasdias067/formValidation-reactNative",
     "description": "Um projeto de formulario com validação. As tecnologias utilizadas foram: React Native",
     "linkGithub": "https://github.com/Lucasdias067/formValidation-reactNative",
-    "id": 7,
+    "id": 9,
     "category": "React Native",
     "image": "",
     "hasImage": false
@@ -74,7 +94,7 @@
     "linkPage": "https://github.com/Lucasdias067/orgsCesta-reactNative",
     "description": "Projeto que simula uma cesta. As tecnologias utilizadas foram: React Native",
     "linkGithub": "https://github.com/Lucasdias067/orgsCesta-reactNative",
-    "id": 8,
+    "id": 10,
     "category": "React Native",
     "image": "",
     "hasImage": false
