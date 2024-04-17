@@ -6,7 +6,8 @@ export default function Custom404() {
       style={{
         fontFamily: 'sans-serif',
         height: '100vh',
-        boxSizing: 'border-box'
+        boxSizing: 'border-box',
+        background: '#fafafa'
       }}
     >
       <h1 style={{ margin: '0px' }}>404 - Page Not Found</h1>
