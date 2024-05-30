@@ -29,7 +29,7 @@ export default function Section() {
             </Link>
           </div>
           <Link
-            href='/files/MYCURRICULO.pdf'
+            href='/files/CURRICULO.pdf'
             target='_blank'
             download
             rel='noopener noreferrer'
