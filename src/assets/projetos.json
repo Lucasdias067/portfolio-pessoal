@@ -70,11 +70,31 @@
     "hasImage": true
   },
   {
+    "title": "IgniteFeed",
+    "linkPage": "https://ignite-feed-red-nine.vercel.app/",
+    "description": "Projeto de feed. As tecnologias utilizadas foram: Next",
+    "linkGithub": "https://github.com/Lucasdias067/igniteFeed",
+    "id": 8,
+    "category": "Next",
+    "image": "https://github.com/Lucasdias067/igniteFeed/assets/101364762/89b987fc-8fda-40ba-a2f3-c7fda799f8e2",
+    "hasImage": true
+  },
+  {
+    "title": "IgniteToDo",
+    "linkPage": "https://ignite-to-do-ten.vercel.app/",
+    "description": "Projeto de lista de tarefas. As tecnologias utilizadas foram: Next",
+    "linkGithub": "https://github.com/Lucasdias067/igniteToDo",
+    "id": 9,
+    "category": "Next",
+    "image": "https://github.com/Lucasdias067/igniteToDo/assets/101364762/b9d9435b-e67d-4c7a-8cc1-43785ec1edd6",
+    "hasImage": true
+  },
+  {
     "title": "Alura Tube",
     "linkPage": "https://alura--tube.vercel.app/",
     "description": "Projeto que replica um youtube. As tecnologias utilizadas foram: Next",
     "linkGithub": "https://github.com/Lucasdias067/aluraTube-Next",
-    "id": 8,
+    "id": 10,
     "category": "Next",
     "image": "https://user-images.githubusercontent.com/101364762/202537964-e092a9b9-f8bd-4533-9820-015c0a7ca010.png",
     "hasImage": true
@@ -84,7 +104,7 @@
     "linkPage": "https://github.com/Lucasdias067/formValidation-reactNative",
     "description": "Um projeto de formulario com validação. As tecnologias utilizadas foram: React Native",
     "linkGithub": "https://github.com/Lucasdias067/formValidation-reactNative",
-    "id": 9,
+    "id": 11,
     "category": "React Native",
     "image": "",
     "hasImage": false
@@ -94,7 +114,7 @@
     "linkPage": "https://github.com/Lucasdias067/orgsCesta-reactNative",
     "description": "Projeto que simula uma cesta. As tecnologias utilizadas foram: React Native",
     "linkGithub": "https://github.com/Lucasdias067/orgsCesta-reactNative",
-    "id": 10,
+    "id": 12,
     "category": "React Native",
     "image": "",
     "hasImage": false
