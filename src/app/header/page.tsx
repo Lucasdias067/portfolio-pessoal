@@ -33,13 +33,13 @@ export default function Header() {
         <a href='/' className='linkName'>
           <h1>Portfólio</h1>
         </a>
-        <div className='navigationHeader'>
+        <nav className='navigationHeader'>
           {navHeader.map(({ name, href, className }) => (
             <a href={href} className={className} key={name} title={name}>
               {name}
             </a>
           ))}
-        </div>
+        </nav>
       </div>
 
       <div className='headerMobile'>
