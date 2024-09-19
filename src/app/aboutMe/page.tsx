@@ -29,13 +29,13 @@ export default function AboutMe() {
               <br />
               <br />
               Tenho experiência em desenvolvimento Web e estou constantemente
-              criando aplicações através dos cursos e da faculdade, e além do
-              desenvolvimento profissional procuro me desenvolver no âmbito
-              pessoal. Estou sempre disposto a aprender e enfrentar desafios
-              difíceis e sou comprometido em entregar resultados de qualidade
-              para a equipe e para a empresa. Valorizo também o trabalho em
-              equipe, trabalhar com pessoas de diferentes origens e habilidades
-              para atingir um objetivo em comum.
+              criando aplicações através de projetos, e além do desenvolvimento
+              profissional procuro me desenvolver no âmbito pessoal. Estou
+              sempre disposto a aprender e enfrentar desafios difíceis e sou
+              comprometido em entregar resultados de qualidade para a equipe e
+              para a empresa. Valorizo também o trabalho em equipe, trabalhar
+              com pessoas de diferentes origens e habilidades para atingir um
+              objetivo em comum.
             </p>
           </div>
         </div>

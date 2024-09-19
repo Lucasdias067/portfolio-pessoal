@@ -1,6 +1,6 @@
 'use client';
 import './style.css';
-import cSharp from '../../assets/icons/brand-c-sharp.svg';
+import nodeJs from '../../assets/icons/node-js-icon.svg';
 import JavaScript from '../../assets/icons/brand-javascript.svg';
 import React from '../../assets/icons/brand-react.svg';
 import ReactNative from '../../assets/icons/brand-react-native.svg';
@@ -41,16 +41,16 @@ export default function MySkills() {
         'React Native é um framework para desenvolvimento de aplicativos móveis multiplataforma utilizando React, que permite criar aplicativos nativos para iOS e Android.'
     },
     {
-      icon: cSharp,
-      skill: 'C#',
+      icon: nodeJs,
+      skill: 'Node.Js',
       description:
-        'C# é uma linguagem de programação orientada a objetos moderna e fortemente tipada e usada principalmente para criar aplicativos para a plataforma .NET.'
+        'Node.js é um ambiente de execução JavaScript server-side, construído no motor V8 do Google Chrome, utilizado para desenvolver aplicações de rede escaláveis e alto desempenho.'
     },
     {
       icon: Sql,
-      skill: 'SQL Server',
+      skill: 'PostgreSQL',
       description:
-        'SQL é uma linguagem de programação utilizada para gerenciar e manipular dados em sistemas de gerenciamento de banco de dados relacionais.'
+        'PostgreSQL é um sistema de gerenciamento de banco de dados relacional e objeto, conhecido por sua robustez, desempenho e conformidade com padrões SQL.'
     }
   ];
 
