@@ -10,7 +10,7 @@ export default function Section() {
       <div className='containerText'>
         <p className='hello'>Olá, eu sou</p>
         <h1 className='textName'>Lucas Dias</h1>
-        <p className='developer'>Desenvolvedor Front-end</p>
+        <p className='developer'>Desenvolvedor Full-Stack</p>
         <div className='btnContainer'>
           <div className='btnLinks'>
             <Link

@@ -50,7 +50,7 @@
     "hasImage": true
   },
   {
-    "title": "Finanças Pessoais",
+    "title": "Sistema Financeiro",
     "linkPage": "https://my-finance-sigma.vercel.app/",
     "description": "Projeto de finanças Pessoais. As tecnologias utilizadas foram: Next",
     "linkGithub": "https://github.com/Lucasdias067/myFinance",
@@ -80,7 +80,7 @@
     "hasImage": true
   },
   {
-    "title": "IgniteToDo",
+    "title": "ToDo List",
     "linkPage": "https://ignite-to-do-ten.vercel.app/",
     "description": "Projeto de lista de tarefas. As tecnologias utilizadas foram: Next",
     "linkGithub": "https://github.com/Lucasdias067/igniteToDo",
