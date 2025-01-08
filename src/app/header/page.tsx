@@ -15,7 +15,7 @@ export default function Header() {
       className: 'headerLink styleNav'
     },
     { name: 'Habilidades', href: '#skills', className: 'headerLink styleNav' },
-    { name: 'Contatos', href: '#contact', className: 'headerLink contactBtn' }
+    { name: 'Contato', href: '#contact', className: 'headerLink contactBtn' }
   ];
 
   function openMobileMenu() {
