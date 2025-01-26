@@ -1,13 +1,13 @@
 [
   {
-    "title": "Credit Card",
-    "linkPage": "https://credit-cards-js.vercel.app/",
-    "description": "Projeto cartão de crédito editável. As tecnologias utilizadas foram: JavaScript e TypeScript",
-    "linkGithub": "https://github.com/Lucasdias067/creditCard-TS",
+    "title": "Sistema de Delivery ",
+    "linkPage": "https://github.com/Lucasdias067/rocket-log",
+    "description": "Implementação de um sistema completo de delivery. As tecnologias utilizadas foram: Express.js, Prisma, Docker",
+    "linkGithub": "https://github.com/Lucasdias067/rocket-log",
     "id": 1,
-    "category": "JavaScript",
-    "image": "https://user-images.githubusercontent.com/101364762/197881670-f75b760b-bb40-4b39-bc83-70512a85dc46.png",
-    "hasImage": true
+    "category": "NodeJs",
+    "image": "",
+    "hasImage": false
   },
   {
     "title": "Aluroni",
@@ -116,6 +116,16 @@
     "linkGithub": "https://github.com/Lucasdias067/orgsCesta-reactNative",
     "id": 12,
     "category": "React Native",
+    "image": "",
+    "hasImage": false
+  },
+  {
+    "title": "TaskManager API",
+    "linkPage": "https://github.com/Lucasdias067/ManagerTask-api",
+    "description": "ToDo list API. As tecnologias utilizadas foram: Express.js, Prisma, Docker e PostgreSQL",
+    "linkGithub": "https://github.com/Lucasdias067/ManagerTask-api",
+    "id": 13,
+    "category": "NodeJs",
     "image": "",
     "hasImage": false
   }

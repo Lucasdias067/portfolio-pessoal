@@ -11,7 +11,7 @@ export default function ProjectsList() {
   const [buttonName, setButtonName] = useState('');
 
   const buttonFilters = [
-    { name: 'JavaScript' },
+    { name: 'NodeJs' },
     { name: 'React' },
     { name: 'Next' },
     { name: 'React Native' }
