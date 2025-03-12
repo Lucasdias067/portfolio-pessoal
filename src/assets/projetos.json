@@ -128,5 +128,15 @@
     "category": "NodeJs",
     "image": "",
     "hasImage": false
+  },
+  {
+    "title": "Pizzashop API",
+    "linkPage": "https://github.com/Lucasdias067/pizzashop-api",
+    "description": "Pizzashop API. As tecnologias utilizadas foram: Fastify, Drizzle, Docker e PostgreSQL",
+    "linkGithub": "https://github.com/Lucasdias067/pizzashop-api",
+    "id": 14,
+    "category": "NodeJs",
+    "image": "",
+    "hasImage": false
   }
 ]

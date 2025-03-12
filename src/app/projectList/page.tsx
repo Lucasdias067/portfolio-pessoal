@@ -106,7 +106,7 @@ export default function ProjectsList() {
                   <div>
                     <span>{id}º</span>{' '}
                     <Link href={linkGithub} target='_blank'>
-                      Respositório
+                      Repositório
                     </Link>
                   </div>
                 </div>
